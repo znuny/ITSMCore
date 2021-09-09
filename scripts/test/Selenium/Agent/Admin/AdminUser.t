@@ -1,7 +1,8 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
-# $origin: otrs - 523a918656e9bb2b56c7417e28403fc9d79046e8 - scripts/test/Selenium/Agent/Admin/AdminUser.t
+# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331 - scripts/test/Selenium/Agent/Admin/AdminUser.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
