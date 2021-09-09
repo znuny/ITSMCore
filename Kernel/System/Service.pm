@@ -1,7 +1,8 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
-# $origin: otrs - 8207d0f681adcdeb5c1b497ac547a1d9749838d5 - Kernel/System/Service.pm
+# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331 - Kernel/System/Service.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -1195,11 +1196,11 @@ sub CustomerUserServiceMemberList {
     my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
 
     # db quote
-    for ( sort keys %Param ) {
-        $Param{$_} = $DBObject->Quote( $Param{$_} );
+    for my $Key ( sort keys %Param ) {
+        $Param{$Key} = $DBObject->Quote( $Param{$Key} );
     }
-    for (qw(ServiceID)) {
-        $Param{$_} = $DBObject->Quote( $Param{$_}, 'Integer' );
+    for my $Key (qw(ServiceID)) {
+        $Param{$Key} = $DBObject->Quote( $Param{$Key}, 'Integer' );
     }
 
     # sql

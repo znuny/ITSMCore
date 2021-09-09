@@ -1,7 +1,8 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
-# $origin: otrs - 8207d0f681adcdeb5c1b497ac547a1d9749838d5 - Kernel/Modules/AdminService.pm
+# $origin: Znuny - 183da4c8303484a83594b3cc5750138013316727 - Kernel/Modules/AdminService.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -97,10 +98,10 @@ sub Run {
 # ---
 # ITSMCore
 # ---
-#        for (qw(ServiceID ParentID Name ValidID Comment)) {
-        for (qw(ServiceID ParentID Name ValidID Comment TypeID Criticality)) {
+#        for my $Needed (qw(ServiceID ParentID Name ValidID Comment)) {
+        for my $Needed (qw(ServiceID ParentID Name ValidID Comment TypeID Criticality)) {
 # ---
-            $GetParam{$_} = $ParamObject->GetParam( Param => $_ ) || '';
+            $GetParam{$Needed} = $ParamObject->GetParam( Param => $Needed ) || '';
         }
 
         my %Error;
