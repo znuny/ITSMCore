@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>ITSMCore</Name>
     <!-- nofilter(TidyAll::Plugin::OTRS::SOPM::DocumentationPresent) -->
-    <Version>6.0.30</Version>
+    <Version>6.0.31</Version>
+    <ChangeLog Version="6.0.31" Date="2021-09-29 16:10:01 +0200">Znuny LTS.</ChangeLog>
     <Framework Minimum="6.0.30">6.0.x</Framework>
     <PackageRequired Version="6.0.30">GeneralCatalog</PackageRequired>
     <Vendor>OTRS AG</Vendor>
@@ -12,160 +13,160 @@
     <Description Lang="de">Das OTRS::ITSM Core Paket.</Description>
     <Description Lang="hu">Az OTRS::ITSM alapcsomag.</Description>
     <Filelist>
-        <File Permission="660" Location="doc/itsm-core-database.dia" />
-        <File Permission="660" Location="doc/itsm-core-database.png" />
-        <File Permission="660" Location="Kernel/Config/Files/XML/FrameworkITSMCore.xml" />
-        <File Permission="660" Location="Kernel/Config/Files/XML/ITSMCore.xml" />
-        <File Permission="660" Location="Kernel/Config/Files/XML/ITSMService.xml" />
-        <File Permission="660" Location="Kernel/Config/Files/XML/TicketITSMService.xml" />
-        <File Permission="660" Location="Kernel/Language/ar_SA_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/bg_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/ca_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/cs_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/da_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/de_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/el_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/en_CA_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/en_GB_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/es_CO_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/es_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/es_MX_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/et_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/fa_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/fi_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/fr_CA_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/fr_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/gl_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/he_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/hi_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/hr_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/hu_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/id_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/it_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/ja_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/ko_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/lt_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/lv_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/mk_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/ms_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/nb_NO_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/nl_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/pl_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/pt_BR_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/pt_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/ro_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/ru_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/sk_SK_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/sl_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/sr_Cyrl_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/sr_Latn_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/sv_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/sw_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/th_TH_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/tr_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/uk_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/vi_VN_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/zh_CN_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Language/zh_TW_ITSMCore.pm" />
-        <File Permission="660" Location="Kernel/Modules/AdminITSMCIPAllocate.pm" />
-        <File Permission="660" Location="Kernel/Modules/AdminService.pm" />
-        <File Permission="660" Location="Kernel/Modules/AdminSLA.pm" />
-        <File Permission="660" Location="Kernel/Modules/AgentITSMService.pm" />
-        <File Permission="660" Location="Kernel/Modules/AgentITSMServicePrint.pm" />
-        <File Permission="660" Location="Kernel/Modules/AgentITSMServiceZoom.pm" />
-        <File Permission="660" Location="Kernel/Modules/AgentITSMSLA.pm" />
-        <File Permission="660" Location="Kernel/Modules/AgentITSMSLAPrint.pm" />
-        <File Permission="660" Location="Kernel/Modules/AgentITSMSLAZoom.pm" />
-        <File Permission="660" Location="Kernel/Output/HTML/ITSMServiceMenu/Generic.pm" />
-        <File Permission="660" Location="Kernel/Output/HTML/ITSMServiceMenu/Link.pm" />
-        <File Permission="660" Location="Kernel/Output/HTML/ITSMSLAMenu/Generic.pm" />
-        <File Permission="660" Location="Kernel/Output/HTML/LinkObject/Service.pm" />
-        <File Permission="660" Location="Kernel/Output/JavaScript/Templates/Standard/Agent/ITSMCore/LoadingDialog.html.tmpl" />
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt" />
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AdminService.tt" />
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AdminSLA.tt" />
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMService.tt" />
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt" />
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMSLA.tt" />
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt" />
-        <File Permission="660" Location="Kernel/System/Console/Command/Admin/Service/Add.pm" />
-        <File Permission="660" Location="Kernel/System/LinkObject/Service.pm" />
-        <File Permission="660" Location="Kernel/System/ITSMCIPAllocate.pm" />
-        <File Permission="660" Location="Kernel/System/Service.pm" />
-        <File Permission="660" Location="Kernel/System/SLA.pm" />
-        <File Permission="660" Location="scripts/test/Console/Command/Admin/Service/Add.t" />
-        <File Permission="660" Location="scripts/test/GenericInterface/Operation/Ticket/TicketCreate.t" />
-        <File Permission="660" Location="scripts/test/GenericInterface/Operation/Ticket/TicketCreateIncludeTicketData.t" />
-        <File Permission="660" Location="scripts/test/GenericInterface/Operation/Ticket/TicketSearch.t" />
-        <File Permission="660" Location="scripts/test/ProcessManagement/TransitionAction/TicketSLASet.t" />
-        <File Permission="660" Location="scripts/test/ProcessManagement/TransitionAction/TicketServiceSet.t" />
-        <File Permission="660" Location="scripts/test/ProcessManagement/Process.t" />
-        <File Permission="660" Location="scripts/test/Stats/TicketSolutionResponseTimeGetStatElement.t" />
-        <File Permission="660" Location="scripts/test/Ticket/TicketACL.t" />
-        <File Permission="660" Location="scripts/test/Ticket/TicketServiceList.t" />
-        <File Permission="660" Location="scripts/test/CustomerUserService.t" />
-        <File Permission="660" Location="scripts/test/ITSMCIPAllocate.t" />
-        <File Permission="660" Location="scripts/test/Service.t" />
-        <File Permission="660" Location="scripts/test/SLA.t" />
-        <File Permission="660" Location="scripts/test/Ticket.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/Admin/AdminCustomerUserService.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/Admin/AdminITSMCIPAllocate.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/Admin/AdminUser.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentStatistics/Add.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentStatistics/Import.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentTicketActionCommon/AgentTicketFreeText.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMService.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMServicePrint.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMServiceZoom.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMSLA.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMSLAPrint.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMSLAZoom.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentTicketActionCommonACLFrontend.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentTicketService.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Output/PDFTicket.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Output/Preferences/Agent/CustomService.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Output/TicketZoom/TicketInformation.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Output/ToolBar/TicketService.t" />
-        <File Permission="660" Location="scripts/test/Selenium/Output/PDFTicket.t" />
-        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfirmDialog.js" />
-        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.CustomerSearch.js" />
-        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.Service.js" />
-        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ServiceZoom.js" />
-        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.SLA.js" />
-        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.SLAZoom.js" />
-        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.Zoom.js" />
-        <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Agent.Default.css" />
-        <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Agent.Detail.css" />
-        <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Agent.Search.css" />
-        <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Print.css" />
-        <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Table.css" />
-        <File Permission="660" Location="var/packagesetup/ITSMCore.pm" />
+        <File Permission="660" Location="doc/itsm-core-database.dia"/>
+        <File Permission="660" Location="doc/itsm-core-database.png"/>
+        <File Permission="660" Location="Kernel/Config/Files/XML/FrameworkITSMCore.xml"/>
+        <File Permission="660" Location="Kernel/Config/Files/XML/ITSMCore.xml"/>
+        <File Permission="660" Location="Kernel/Config/Files/XML/ITSMService.xml"/>
+        <File Permission="660" Location="Kernel/Config/Files/XML/TicketITSMService.xml"/>
+        <File Permission="660" Location="Kernel/Language/ar_SA_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/bg_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/ca_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/cs_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/da_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/de_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/el_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/en_CA_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/en_GB_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/es_CO_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/es_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/es_MX_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/et_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/fa_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/fi_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/fr_CA_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/fr_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/gl_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/he_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/hi_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/hr_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/hu_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/id_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/it_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/ja_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/ko_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/lt_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/lv_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/mk_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/ms_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/nb_NO_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/nl_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/pl_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/pt_BR_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/pt_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/ro_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/ru_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/sk_SK_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/sl_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/sr_Cyrl_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/sr_Latn_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/sv_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/sw_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/th_TH_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/tr_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/uk_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/vi_VN_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/zh_CN_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Language/zh_TW_ITSMCore.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AdminITSMCIPAllocate.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AdminService.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AdminSLA.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AgentITSMService.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AgentITSMServicePrint.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AgentITSMServiceZoom.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AgentITSMSLA.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AgentITSMSLAPrint.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AgentITSMSLAZoom.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/ITSMServiceMenu/Generic.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/ITSMServiceMenu/Link.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/ITSMSLAMenu/Generic.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/LinkObject/Service.pm"/>
+        <File Permission="660" Location="Kernel/Output/JavaScript/Templates/Standard/Agent/ITSMCore/LoadingDialog.html.tmpl"/>
+        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt"/>
+        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AdminService.tt"/>
+        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AdminSLA.tt"/>
+        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMService.tt"/>
+        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt"/>
+        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMSLA.tt"/>
+        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt"/>
+        <File Permission="660" Location="Kernel/System/Console/Command/Admin/Service/Add.pm"/>
+        <File Permission="660" Location="Kernel/System/LinkObject/Service.pm"/>
+        <File Permission="660" Location="Kernel/System/ITSMCIPAllocate.pm"/>
+        <File Permission="660" Location="Kernel/System/Service.pm"/>
+        <File Permission="660" Location="Kernel/System/SLA.pm"/>
+        <File Permission="660" Location="scripts/test/Console/Command/Admin/Service/Add.t"/>
+        <File Permission="660" Location="scripts/test/GenericInterface/Operation/Ticket/TicketCreate.t"/>
+        <File Permission="660" Location="scripts/test/GenericInterface/Operation/Ticket/TicketCreateIncludeTicketData.t"/>
+        <File Permission="660" Location="scripts/test/GenericInterface/Operation/Ticket/TicketSearch.t"/>
+        <File Permission="660" Location="scripts/test/ProcessManagement/TransitionAction/TicketSLASet.t"/>
+        <File Permission="660" Location="scripts/test/ProcessManagement/TransitionAction/TicketServiceSet.t"/>
+        <File Permission="660" Location="scripts/test/ProcessManagement/Process.t"/>
+        <File Permission="660" Location="scripts/test/Stats/TicketSolutionResponseTimeGetStatElement.t"/>
+        <File Permission="660" Location="scripts/test/Ticket/TicketACL.t"/>
+        <File Permission="660" Location="scripts/test/Ticket/TicketServiceList.t"/>
+        <File Permission="660" Location="scripts/test/CustomerUserService.t"/>
+        <File Permission="660" Location="scripts/test/ITSMCIPAllocate.t"/>
+        <File Permission="660" Location="scripts/test/Service.t"/>
+        <File Permission="660" Location="scripts/test/SLA.t"/>
+        <File Permission="660" Location="scripts/test/Ticket.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/Admin/AdminCustomerUserService.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/Admin/AdminITSMCIPAllocate.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/Admin/AdminUser.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentStatistics/Add.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentStatistics/Import.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentTicketActionCommon/AgentTicketFreeText.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMService.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMServicePrint.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMServiceZoom.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMSLA.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMSLAPrint.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMSLAZoom.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentTicketActionCommonACLFrontend.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentTicketService.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Output/PDFTicket.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Output/Preferences/Agent/CustomService.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Output/TicketZoom/TicketInformation.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Output/ToolBar/TicketService.t"/>
+        <File Permission="660" Location="scripts/test/Selenium/Output/PDFTicket.t"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfirmDialog.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.CustomerSearch.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.Service.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ServiceZoom.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.SLA.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.SLAZoom.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.Zoom.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Agent.Default.css"/>
+        <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Agent.Detail.css"/>
+        <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Agent.Search.css"/>
+        <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Print.css"/>
+        <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Table.css"/>
+        <File Permission="660" Location="var/packagesetup/ITSMCore.pm"/>
     </Filelist>
     <DatabaseInstall Type="post">
         <TableCreate Name="cip_allocate">
-            <Column Name="id" Required="true" PrimaryKey="true" AutoIncrement="true" Type="BIGINT" />
-            <Column Name="criticality" Required="true" Size="200" Type="VARCHAR" />
-            <Column Name="impact" Required="true" Size="200" Type="VARCHAR" />
-            <Column Name="priority_id" Required="true" Type="SMALLINT" />
-            <Column Name="create_time" Required="false" Type="DATE" />
-            <Column Name="create_by" Required="false" Type="INTEGER" />
-            <Column Name="change_time" Required="false" Type="DATE" />
-            <Column Name="change_by" Required="false" Type="INTEGER" />
+            <Column Name="id" Required="true" PrimaryKey="true" AutoIncrement="true" Type="BIGINT"/>
+            <Column Name="criticality" Required="true" Size="200" Type="VARCHAR"/>
+            <Column Name="impact" Required="true" Size="200" Type="VARCHAR"/>
+            <Column Name="priority_id" Required="true" Type="SMALLINT"/>
+            <Column Name="create_time" Required="false" Type="DATE"/>
+            <Column Name="create_by" Required="false" Type="INTEGER"/>
+            <Column Name="change_time" Required="false" Type="DATE"/>
+            <Column Name="change_by" Required="false" Type="INTEGER"/>
             <ForeignKey ForeignTable="ticket_priority">
-                <Reference Local="priority_id" Foreign="id" />
+                <Reference Local="priority_id" Foreign="id"/>
             </ForeignKey>
             <ForeignKey ForeignTable="users">
-                <Reference Local="create_by" Foreign="id" />
-                <Reference Local="change_by" Foreign="id" />
+                <Reference Local="create_by" Foreign="id"/>
+                <Reference Local="change_by" Foreign="id"/>
             </ForeignKey>
         </TableCreate>
         <TableAlter Name="service">
-            <ColumnAdd Name="type_id" Required="false" Type="INTEGER" />
-            <ColumnAdd Name="criticality" Required="false" Size="200" Type="VARCHAR" />
+            <ColumnAdd Name="type_id" Required="false" Type="INTEGER"/>
+            <ColumnAdd Name="criticality" Required="false" Size="200" Type="VARCHAR"/>
         </TableAlter>
         <TableAlter Name="sla">
-            <ColumnAdd Name="type_id" Required="false" Type="INTEGER" />
-            <ColumnAdd Name="min_time_bet_incidents" Required="false" Type="INTEGER" />
+            <ColumnAdd Name="type_id" Required="false" Type="INTEGER"/>
+            <ColumnAdd Name="min_time_bet_incidents" Required="false" Type="INTEGER"/>
         </TableAlter>
         <Insert Table="general_catalog">
             <Data Key="general_catalog_class" Type="Quote">ITSM::Core::IncidentState</Data>
@@ -360,27 +361,27 @@
     <DatabaseUpgrade Type="post">
         <TableAlter Name="cip_allocate" Version="3.2.91">
             <ForeignKeyDrop ForeignTable="general_catalog">
-                <Reference Local="criticality_id" Foreign="id" />
-                <Reference Local="impact_id" Foreign="id" />
+                <Reference Local="criticality_id" Foreign="id"/>
+                <Reference Local="impact_id" Foreign="id"/>
             </ForeignKeyDrop>
         </TableAlter>
         <TableAlter Name="cip_allocate" Version="3.2.91">
-            <ColumnAdd Name="criticality" Required="true" Size="200" Type="VARCHAR" />
-            <ColumnAdd Name="impact" Required="true" Size="200" Type="VARCHAR" />
+            <ColumnAdd Name="criticality" Required="true" Size="200" Type="VARCHAR"/>
+            <ColumnAdd Name="impact" Required="true" Size="200" Type="VARCHAR"/>
         </TableAlter>
         <TableAlter Name="service" Version="3.2.91">
-            <ColumnAdd Name="criticality" Required="false" Size="200" Type="VARCHAR" />
+            <ColumnAdd Name="criticality" Required="false" Size="200" Type="VARCHAR"/>
         </TableAlter>
     </DatabaseUpgrade>
     <DatabaseUninstall Type="pre">
-        <TableDrop Name="cip_allocate" />
+        <TableDrop Name="cip_allocate"/>
         <TableAlter Name="service">
-            <ColumnDrop Name="type_id" />
-            <ColumnDrop Name="criticality" />
+            <ColumnDrop Name="type_id"/>
+            <ColumnDrop Name="criticality"/>
         </TableAlter>
         <TableAlter Name="sla">
-            <ColumnDrop Name="type_id" />
-            <ColumnDrop Name="min_time_bet_incidents" />
+            <ColumnDrop Name="type_id"/>
+            <ColumnDrop Name="min_time_bet_incidents"/>
         </TableAlter>
     </DatabaseUninstall>
     <CodeInstall Type="post"><![CDATA[
