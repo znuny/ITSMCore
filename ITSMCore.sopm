@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.0">
     <Name>ITSMCore</Name>
-<!-- nofilter(TidyAll::Plugin::OTRS::SOPM::DocumentationPresent) -->
-    <Version>0.0.0</Version>
+    <!-- nofilter(TidyAll::Plugin::OTRS::SOPM::DocumentationPresent) -->
+    <Version>6.0.30</Version>
     <Framework Minimum="6.0.30">6.0.x</Framework>
     <PackageRequired Version="6.0.30">GeneralCatalog</PackageRequired>
     <Vendor>OTRS AG</Vendor>
