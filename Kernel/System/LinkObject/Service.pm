@@ -1,6 +1,6 @@
 # --
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -26,7 +26,7 @@ Kernel::System::LinkObject::Service
 
 =head1 DESCRIPTION
 
-Service backend for the service link object.
+Service back end for the service link object.
 
 =head1 PUBLIC INTERFACE
 
@@ -319,7 +319,7 @@ sub ObjectSearch {
 
 =head2 LinkAddPre()
 
-link add pre event module
+link add before event module
 
     $True = $LinkObject->LinkAddPre(
         Key          => 123,
@@ -364,7 +364,7 @@ sub LinkAddPre {
 
 =head2 LinkAddPost()
 
-link add pre event module
+link add before event module
 
     $True = $LinkObject->LinkAddPost(
         Key          => 123,
@@ -409,7 +409,7 @@ sub LinkAddPost {
 
 =head2 LinkDeletePre()
 
-link delete pre event module
+link delete before event module
 
     $True = $LinkObject->LinkDeletePre(
         Key          => 123,
