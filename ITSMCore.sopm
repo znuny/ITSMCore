@@ -2,7 +2,7 @@
 <otrs_package version="1.0">
     <Name>ITSMCore</Name>
     <!-- nofilter(TidyAll::Plugin::OTRS::SOPM::DocumentationPresent) -->
-    <Version>6.3.1</Version>
+    <Version>6.3.3</Version>
     <Framework Minimum="6.3.2">6.3.x</Framework>
     <PackageRequired Version="6.3.1">GeneralCatalog</PackageRequired>
     <Vendor>Znuny</Vendor>
@@ -11,6 +11,7 @@
     <Description Lang="en">The OTRS::ITSM Core package.</Description>
     <Description Lang="de">Das OTRS::ITSM Core Paket.</Description>
     <Description Lang="hu">Az OTRS::ITSM alapcsomag.</Description>
+    <ChangeLog Version="6.3.3" Date="2022-04-28 10:14:17 +0200">Release for Znuny 6.3.3.</ChangeLog>
     <ChangeLog Version="6.3.1" Date="2022-03-18 10:16:46 +0100">Ported to 6.3.</ChangeLog>
     <Filelist>
         <File Permission="660" Location="doc/itsm-core-database.dia"/>
