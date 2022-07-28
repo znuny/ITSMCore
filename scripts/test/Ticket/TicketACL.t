@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
-# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331 - scripts/test/Ticket/TicketACL.t
+# $origin: Znuny - f54d3dc4be84e0546605e45a6bad23cd0c3e760d - scripts/test/Ticket/TicketACL.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -35,20 +35,20 @@ $Kernel::OM->ObjectParamAdd(
         UseTmpArticleDir => 1,
     },
 );
-my $Helper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+my $HelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
 # set valid options
 my %ValidList = $Kernel::OM->Get('Kernel::System::Valid')->ValidList();
 %ValidList = reverse %ValidList;
 
 # set user options
-my ( $UserLogin, $UserID ) = $Helper->TestUserCreate(
+my ( $UserLogin, $UserID ) = $HelperObject->TestUserCreate(
     Groups => ['admin'],
 );
 my %UserData = $UserObject->GetUserData(
     UserID => $UserID,
 );
-my ( $NewUserLogin, $NewUserID ) = $Helper->TestUserCreate(
+my ( $NewUserLogin, $NewUserID ) = $HelperObject->TestUserCreate(
     Groups => ['admin'],
 );
 my %NewUserData = $UserObject->GetUserData(
@@ -56,21 +56,21 @@ my %NewUserData = $UserObject->GetUserData(
 );
 
 # set customer user options
-my $CustomerUserLogin = $Helper->TestCustomerUserCreate()
+my $CustomerUserLogin = $HelperObject->TestCustomerUserCreate()
     || die "Did not get test customer user";
 
 my %CustomerUserData = $CustomerUserObject->CustomerUserDataGet(
     User => $CustomerUserLogin,
 );
 
-my $NewCustomerUserLogin = $Helper->TestCustomerUserCreate()
+my $NewCustomerUserLogin = $HelperObject->TestCustomerUserCreate()
     || die "Did not get test customer user";
 
 my %NewCustomerUserData = $CustomerUserObject->CustomerUserDataGet(
     User => $NewCustomerUserLogin,
 );
 
-my $RandomID = $Helper->GetRandomID();
+my $RandomID = $HelperObject->GetRandomID();
 
 # set queue options
 my $QueueName = 'Queue_' . $RandomID;

@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
-# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331 - scripts/test/Selenium/Output/Preferences/Agent/CustomService.t
+# $origin: Znuny - f54d3dc4be84e0546605e45a6bad23cd0c3e760d - scripts/test/Selenium/Output/Preferences/Agent/CustomService.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -23,24 +23,24 @@ $Selenium->RunTest(
     sub {
 
         # get helper object
-        my $Helper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+        my $HelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
         # enable the services
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Service',
             Value => '1',
         );
 
         # don't keep children services
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Service::KeepChildren',
             Value => '0',
         );
 
         # create test user and login
-        my $TestUserLogin = $Helper->TestUserCreate(
+        my $TestUserLogin = $HelperObject->TestUserCreate(
             Groups => [ 'admin', 'users' ],
         ) || die "Did not get test user";
 
@@ -62,7 +62,7 @@ $Selenium->RunTest(
         my @ServiceIDs;
         my @ServiceNames;
         for my $Service (qw(Parent Child)) {
-            my $ServiceName = $Service . 'Service' . $Helper->GetRandomID();
+            my $ServiceName = $Service . 'Service' . $HelperObject->GetRandomID();
             my $ServiceID   = $ServiceObject->ServiceAdd(
                 Name    => $ServiceName,
                 ValidID => 2,                 # invalid
@@ -119,7 +119,7 @@ $Selenium->RunTest(
         );
 
         # turn on keep children setting
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Service::KeepChildren',
             Value => '1',

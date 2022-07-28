@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
-# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331s - scripts/test/Selenium/Output/PDFTicket.t
+# $origin: Znuny - f54d3dc4be84e0546605e45a6bad23cd0c3e760d - scripts/test/Selenium/Output/PDFTicket.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -28,31 +28,31 @@ if ( $Selenium->{browser_name} ne 'firefox' ) {
 $Selenium->RunTest(
     sub {
 
-        my $Helper   = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
-        my $RandomID = $Helper->GetRandomID();
+        my $HelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+        my $RandomID     = $HelperObject->GetRandomID();
 
         # Do not check email addresses.
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Key   => 'CheckEmailAddresses',
             Value => 0,
         );
 
         # Enable ticket Responsible feature.
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Responsible',
             Value => 1
         );
 
         # Enable ticket Type feature.
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Type',
             Value => 1
         );
 
         # Enable ticket service feature.
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Service',
             Value => 1
@@ -100,7 +100,7 @@ my %CustomerTicketPrintSysConfig = $Kernel::OM->Get('Kernel::System::SysConfig')
 );
 
 # Make sure CustomerTicket print is enabled.
-$Helper->ConfigSettingChange(
+$HelperObject->ConfigSettingChange(
     Valid => 1,
     Key   => 'CustomerFrontend::Module###CustomerTicketPrint',
     Value => $CustomerTicketPrintSysConfig{EffectiveValue},
@@ -172,7 +172,7 @@ $Helper->ConfigSettingChange(
         for my $UserCount ( 1 .. 2 ) {
 
             # Create test User and login.
-            my $TestUserLogin = $Helper->TestUserCreate(
+            my $TestUserLogin = $HelperObject->TestUserCreate(
                 Groups => ['users'],
             ) || die "Did not get test user";
 
@@ -334,7 +334,7 @@ $Helper->ConfigSettingChange(
         }
 
         # Create Dynamic Fields.
-        my $RandomNumber = substr $Helper->GetRandomNumber(), -7;
+        my $RandomNumber = substr $HelperObject->GetRandomNumber(), -7;
         my %DynamicFields = (
             Dropdown => {
                 Name       => 'DFDropdown' . $RandomNumber,
@@ -439,7 +439,7 @@ $Helper->ConfigSettingChange(
         }
 
         # Enable created DynamicFields to be visible in AgentTicketPrint.
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Frontend::AgentTicketPrint###DynamicField',
             Value => {
@@ -450,7 +450,7 @@ $Helper->ConfigSettingChange(
         );
 
         # Enable created DynamicFields to be visible in CustomerTicketPrint.
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Frontend::CustomerTicketPrint###DynamicField',
             Value => {
@@ -461,7 +461,7 @@ $Helper->ConfigSettingChange(
         );
 
         # Enable Ticket attributes in CustomerTicketZoom screen => CustomerTicketPrint.
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Frontend::CustomerTicketZoom###AttributesView',
             Value => {
@@ -508,7 +508,7 @@ $Helper->ConfigSettingChange(
         );
 
         # Create test User and login.
-        my $TestUserLogin = $Helper->TestUserCreate(
+        my $TestUserLogin = $HelperObject->TestUserCreate(
             Groups => [ 'admin', 'users' ],
         ) || die "Did not get test user";
 

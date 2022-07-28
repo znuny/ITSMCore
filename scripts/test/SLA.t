@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
-# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331 - scripts/test/SLA.t
+# $origin: Znuny - 2012caffdec4d7cedb8c9814e778c7eb31470490 - scripts/test/SLA.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -29,7 +29,7 @@ $Kernel::OM->ObjectParamAdd(
         RestoreDatabase => 1,
     },
 );
-my $Helper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+my $HelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
 # ------------------------------------------------------------ #
 # make preparations
@@ -52,7 +52,7 @@ my @UserIDs;
         my $UserID = $UserObject->UserAdd(
             UserFirstname => 'SLA' . $Counter,
             UserLastname  => 'UnitTest',
-            UserLogin     => 'UnitTest-SLA-' . $Counter . $Helper->GetRandomID(),
+            UserLogin     => 'UnitTest-SLA-' . $Counter . $HelperObject->GetRandomID(),
             UserEmail     => 'UnitTest-SLA-' . $Counter . '@localhost',
             ValidID       => 1,
             ChangeUserID  => 1,
@@ -71,7 +71,7 @@ my @UserIDs;
 # create needed random service names
 my @SLAName;
 for my $Counter ( 1 .. 10 ) {
-    push @SLAName, 'UnitTest' . $Helper->GetRandomID();
+    push @SLAName, 'UnitTest' . $HelperObject->GetRandomID();
 }
 
 # create some test services
@@ -80,7 +80,7 @@ for my $Counter ( 1 .. 3 ) {
 
     # add a service
     my $ServiceID = $ServiceObject->ServiceAdd(
-        Name    => 'UnitTest-SLA' . $Helper->GetRandomID(),
+        Name    => 'UnitTest-SLA' . $HelperObject->GetRandomID(),
         ValidID => 1,
         UserID  => 1,
 # ---

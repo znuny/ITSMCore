@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
-# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331 - scripts/test/Console/Command/Admin/Service/Add.t
+# $origin: Znuny - 2ddd1968a356ba441e8bca931a7957660e229a4d - scripts/test/Console/Command/Admin/Service/Add.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -25,10 +25,10 @@ $Kernel::OM->ObjectParamAdd(
         RestoreDatabase => 1,
     },
 );
-my $Helper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+my $HelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
-my $ParentServiceName = "ParentService" . $Helper->GetRandomID();
-my $ChildServiceName  = "ChildService" . $Helper->GetRandomID();
+my $ParentServiceName = "ParentService" . $HelperObject->GetRandomID();
+my $ChildServiceName  = "ChildService" . $HelperObject->GetRandomID();
 
 # try to execute command without any options
 $ExitCode = $CommandObject->Execute();

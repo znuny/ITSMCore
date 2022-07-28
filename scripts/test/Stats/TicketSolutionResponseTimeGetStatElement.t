@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
-# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331 - scripts/test/Stats/TicketSolutionResponseTimeGetStatElement.t
+# $origin: Znuny - f54d3dc4be84e0546605e45a6bad23cd0c3e760d - scripts/test/Stats/TicketSolutionResponseTimeGetStatElement.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -21,7 +21,7 @@ $Kernel::OM->ObjectParamAdd(
         UseTmpArticleDir => 1,
     },
 );
-my $Helper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+my $HelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
 my $DynamicFieldObject   = $Kernel::OM->Get('Kernel::System::DynamicField');
 my $BackendObject        = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
@@ -51,14 +51,14 @@ my %SLATypeName2ID = reverse %{ $SLATypeList };
 # ---
 
 # Enable Service.
-$Helper->ConfigSettingChange(
+$HelperObject->ConfigSettingChange(
     Key   => 'Ticket::Service',
     Value => 1,
 );
 
 # Use a calendar with the same business hours for every day so that the UT runs correctly
 #   on every day of the week and outside usual business hours.
-$Helper->ConfigSettingChange(
+$HelperObject->ConfigSettingChange(
     Key   => 'TimeWorkingHours::Calendar1',
     Value => {
         map { $_ => [ 0 .. 23 ] } qw( Mon Tue Wed Thu Fri Sat Sun ),
@@ -66,18 +66,18 @@ $Helper->ConfigSettingChange(
 );
 
 # Disable default Vacation days.
-$Helper->ConfigSettingChange(
+$HelperObject->ConfigSettingChange(
     Key   => 'TimeVacationDays::Calendar1',
     Value => {},
 );
 
 # Set fixed time.
-$Helper->FixedTimeSet();
+$HelperObject->FixedTimeSet();
 
-my $RandomID = $Helper->GetRandomNumber();
+my $RandomID = $HelperObject->GetRandomNumber();
 
 # Create a test customer.
-my $TestUserCustomer = $Helper->TestCustomerUserCreate();
+my $TestUserCustomer = $HelperObject->TestCustomerUserCreate();
 
 # Create a dynamic field.
 my $DynamicFieldName = "TestDF$RandomID";
@@ -105,7 +105,7 @@ $Self->True(
 
 # Add test Service.
 my $ServiceID = $ServiceObject->ServiceAdd(
-    Name    => "TestService - " . $Helper->GetRandomID(),
+    Name    => "TestService - " . $HelperObject->GetRandomID(),
 # ---
 # ITSMCore
 # ---
@@ -130,7 +130,7 @@ $ServiceObject->CustomerUserServiceMemberAdd(
 
 # Add test SLA.
 my $SLAID = $Kernel::OM->Get('Kernel::System::SLA')->SLAAdd(
-    Name                => "TestSLA - " . $Helper->GetRandomID(),
+    Name                => "TestSLA - " . $HelperObject->GetRandomID(),
     ServiceIDs          => [$ServiceID],
 # ---
 # ITSMCore
@@ -185,7 +185,7 @@ for my $Item ( 1 .. 6 ) {
         UserID             => 1,
     );
 
-    $Helper->FixedTimeAddSeconds( 2 * $Item * 60 );
+    $HelperObject->FixedTimeAddSeconds( 2 * $Item * 60 );
 
     my $Success = $TicketObject->TicketStateSet(
         StateID            => 4,
@@ -216,7 +216,7 @@ for my $Item ( 1 .. 6 ) {
     );
     $Self->True( $ArticleID, "ArticleCreate() Created article $ArticleID" );
 
-    $Helper->FixedTimeAddSeconds( $Item * 60 );
+    $HelperObject->FixedTimeAddSeconds( $Item * 60 );
 
     # Close all ticket's except the last one.
     if ( $Item != 6 ) {

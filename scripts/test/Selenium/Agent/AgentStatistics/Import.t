@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
-# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331 - scripts/test/Selenium/Agent/AgentStatistics/Import.t
+# $origin: Znuny - 2012caffdec4d7cedb8c9814e778c7eb31470490 - scripts/test/Selenium/Agent/AgentStatistics/Import.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -20,7 +20,7 @@ my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
 $Selenium->RunTest(
     sub {
 
-        my $Helper        = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+        my $HelperObject  = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
         my $ServiceObject = $Kernel::OM->Get('Kernel::System::Service');
         my $SLAObject     = $Kernel::OM->Get('Kernel::System::SLA');
 
@@ -28,22 +28,22 @@ $Selenium->RunTest(
 
             # Service data
             Services => [
-                { Name => "TestService - " . $Helper->GetRandomID() },
-                { Name => "TestService - " . $Helper->GetRandomID() },
+                { Name => "TestService - " . $HelperObject->GetRandomID() },
+                { Name => "TestService - " . $HelperObject->GetRandomID() },
             ],
 
             # SLA data
             SLAs => [
                 {
-                    Name => "TestSLA - " . $Helper->GetRandomID(),
+                    Name => "TestSLA - " . $HelperObject->GetRandomID(),
                 },
                 {
-                    Name => "TestSLA - " . $Helper->GetRandomID(),
+                    Name => "TestSLA - " . $HelperObject->GetRandomID(),
                 },
             ],
         };
 
-        my $Success = $Helper->ConfigSettingChange(
+        my $Success = $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Service',
             Value => 1,
@@ -114,7 +114,7 @@ $Selenium->RunTest(
         }
 
         # Create test user and login.
-        my $TestUserLogin = $Helper->TestUserCreate(
+        my $TestUserLogin = $HelperObject->TestUserCreate(
             Groups => [ 'admin', 'users', 'stats' ],
         ) || die "Did not get test user";
 

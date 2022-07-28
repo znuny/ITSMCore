@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
-# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331 - scripts/test/Selenium/Agent/AgentTicketActionCommonACLFrontend.t
+# $origin: Znuny - 2012caffdec4d7cedb8c9814e778c7eb31470490 - scripts/test/Selenium/Agent/AgentTicketActionCommonACLFrontend.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -17,7 +17,7 @@ my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
 
 $Selenium->RunTest(
     sub {
-        my $Helper         = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+        my $HelperObject   = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
         my $ACLObject      = $Kernel::OM->Get('Kernel::System::ACL::DB::ACL');
         my $TicketObject   = $Kernel::OM->Get('Kernel::System::Ticket');
         my $TypeObject     = $Kernel::OM->Get('Kernel::System::Type');
@@ -27,30 +27,30 @@ $Selenium->RunTest(
         my $SLAObject      = $Kernel::OM->Get('Kernel::System::SLA');
         my $CacheObject    = $Kernel::OM->Get('Kernel::System::Cache');
 
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'CheckMXRecord',
             Value => 0,
         );
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Type',
             Value => 1,
         );
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Key   => 'Ticket::Service',
             Value => 1,
         );
 
-        my $RandomID = $Helper->GetRandomID();
+        my $RandomID = $HelperObject->GetRandomID();
 
         # Create test customer user.
-        my $TestCustomerUserLogin = $Helper->TestCustomerUserCreate()
+        my $TestCustomerUserLogin = $HelperObject->TestCustomerUserCreate()
             || die "Did not get test customer user";
 
         # Enable some fields in AgentTicketFreeText.
         for my $Field (qw(Type Priority Queue Service SLA)) {
-            $Helper->ConfigSettingChange(
+            $HelperObject->ConfigSettingChange(
                 Valid => 1,
                 Key   => "Ticket::Frontend::AgentTicketFreeText###$Field",
                 Value => 1,
@@ -175,7 +175,7 @@ $Selenium->RunTest(
         # Create 2 ACLs:
         # 1. Disable all
         # 2. PossibleAdd appropriate attributes, Match "Frontend->Action->[RegExp]^Agent".
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Valid => 1,
             Key   => 'TicketAcl',
             Value => {
@@ -233,7 +233,7 @@ $Selenium->RunTest(
         );
 
         # Create test user and login.
-        my $TestUserLogin = $Helper->TestUserCreate(
+        my $TestUserLogin = $HelperObject->TestUserCreate(
             Groups => [ 'admin', 'users' ],
         ) || die "Did not get test user";
 

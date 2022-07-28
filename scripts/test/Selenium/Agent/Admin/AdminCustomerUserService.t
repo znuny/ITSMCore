@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
-# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331 - scripts/test/Selenium/Agent/Admin/AdminCustomerUserService.t
+# $origin: Znuny - 6c6c6cc6c785fac853edb49feee03841ec3396cc - scripts/test/Selenium/Agent/Admin/AdminCustomerUserService.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -20,16 +20,16 @@ my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
 $Selenium->RunTest(
     sub {
 
-        my $Helper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+        my $HelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
         # Disable check email address.
-        $Helper->ConfigSettingChange(
+        $HelperObject->ConfigSettingChange(
             Key   => 'CheckEmailAddresses',
             Value => 0
         );
 
         # Create test CustomerUser.
-        my $CustomerUserName = "CustomerUser" . $Helper->GetRandomID();
+        my $CustomerUserName = "CustomerUser" . $HelperObject->GetRandomID();
         my $CustomerUserID   = $Kernel::OM->Get('Kernel::System::CustomerUser')->CustomerUserAdd(
             UserFirstname  => $CustomerUserName,
             UserLastname   => $CustomerUserName,
@@ -45,7 +45,7 @@ $Selenium->RunTest(
         );
 
         # Create test Service.
-        my $ServiceName = 'SomeService' . $Helper->GetRandomID();
+        my $ServiceName = 'SomeService' . $HelperObject->GetRandomID();
         my $ServiceID   = $Kernel::OM->Get('Kernel::System::Service')->ServiceAdd(
             Name    => $ServiceName,
             Comment => 'Some Comment',
@@ -64,7 +64,7 @@ $Selenium->RunTest(
         );
 
         # Create test user and login.
-        my $TestUserLogin = $Helper->TestUserCreate(
+        my $TestUserLogin = $HelperObject->TestUserCreate(
             Groups => ['admin'],
         ) || die "Did not get test user";
 

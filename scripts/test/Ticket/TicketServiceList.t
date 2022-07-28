@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
-# $origin: Znuny - 012b2cb0daf8519ff314f751ad03b62219f63331 - scripts/test/Ticket/TicketServiceList.t
+# $origin: Znuny - f54d3dc4be84e0546605e45a6bad23cd0c3e760d - scripts/test/Ticket/TicketServiceList.t
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -20,14 +20,14 @@ $Kernel::OM->ObjectParamAdd(
         RestoreDatabase => 1,
     },
 );
-my $Helper        = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
+my $HelperObject  = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 my $TicketObject  = $Kernel::OM->Get('Kernel::System::Ticket');
 my $ServiceObject = $Kernel::OM->Get('Kernel::System::Service');
 my $TypeObject    = $Kernel::OM->Get('Kernel::System::Type');
 
-my $TestUserLogin = $Helper->TestCustomerUserCreate();
+my $TestUserLogin = $HelperObject->TestCustomerUserCreate();
 
-my $Random = $Helper->GetRandomNumber();
+my $Random = $HelperObject->GetRandomNumber();
 
 my $TypeID1 = $TypeObject->TypeAdd(
     Name    => 'TestType1' . $Random,
