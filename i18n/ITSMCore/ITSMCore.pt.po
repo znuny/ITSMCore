@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMCore\n"
 "POT-Creation-Date: 2020-01-24 12:24+0000\n"
-"PO-Revision-Date: 2020-02-07 11:51+0000\n"
-"Last-Translator: Joao Ferro <joao.ferro@otrs.com>\n"
-"Language-Team: Portuguese <https://translate.app.otrs.com/projects/otrs-6/"
-"itsm-core/pt/>\n"
+"PO-Revision-Date: 2022-08-16 18:10+0000\n"
+"Last-Translator: Samuel Diniz Casimiro <nedmaj@yahoo.com>\n"
+"Language-Team: Portuguese <https://translations.znuny.org/projects/znuny/"
+"itsmcore/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. Template: AdminITSMCIPAllocate
 msgid "Criticality ↔ Impact ↔ Priority"
@@ -67,35 +67,35 @@ msgstr "Impacto"
 
 #. Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
 msgid "No SLAID is given!"
-msgstr ""
+msgstr "Nenhum SLAID foi informado!"
 
 #. Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
 msgid "SLAID %s not found in database!"
-msgstr ""
+msgstr "SLAID %s não encontrado na base de dados!"
 
 #. Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
 msgid "Calendar Default"
-msgstr ""
+msgstr "Calendário Padrão"
 
 #. Perl Module: Kernel/Modules/AgentITSMSLAZoom.pm
 msgid "operational"
-msgstr ""
+msgstr "operativo"
 
 #. Perl Module: Kernel/Modules/AgentITSMSLAZoom.pm
 msgid "warning"
-msgstr ""
+msgstr "aviso"
 
 #. Perl Module: Kernel/Modules/AgentITSMSLAZoom.pm
 msgid "incident"
-msgstr ""
+msgstr "incidente"
 
 #. Perl Module: Kernel/Modules/AgentITSMServicePrint.pm
 msgid "No ServiceID is given!"
-msgstr ""
+msgstr "Nenhum ServiceID foi informado!"
 
 #. Perl Module: Kernel/Modules/AgentITSMServicePrint.pm
 msgid "ServiceID %s not found in database!"
-msgstr ""
+msgstr "ServiceID %s não encontrado na base de dados!"
 
 #. Perl Module: Kernel/Modules/AgentITSMServicePrint.pm
 msgid "Current Incident State"
@@ -256,7 +256,7 @@ msgstr "Gerir a matriz de Prioridade"
 
 #. SysConfig
 msgid "Manage the criticality - impact - priority matrix."
-msgstr ""
+msgstr "Gerenciar a matriz de criticidade - impacto - prioridade."
 
 #. SysConfig
 msgid "Module to show the Back menu item in SLA menu."
@@ -325,10 +325,25 @@ msgstr "Área Serviço"
 #. SysConfig
 msgid "Set the type and direction of links to be used to calculate the incident state. The key is the name of the link type (as defined in LinkObject::Type), and the value is the direction of the IncidentLinkType that should be followed to calculate the incident state. For example if the IncidentLinkType is set to 'DependsOn', and the Direction is 'Source', only 'Depends on' links will be followed (and not the opposite link 'Required for') to calculate the incident state. You can add more link types ad directions as you like, e.g. 'Includes' with the direction 'Target'. All link types defined in the sysconfig options LinkObject::Type are possible and the direction can be 'Source', 'Target', or 'Both'. IMPORTANT: AFTER YOU MAKE CHANGES TO THIS SYSCONFIG OPTION YOU NEED TO RUN THE CONSOLE COMMAND bin/otrs.Console.pl Admin::ITSM::IncidentState::Recalculate SO THAT ALL INCIDENT STATES WILL BE RECALCULATED BASED ON THE NEW SETTINGS!"
 msgstr ""
+"Define o tipo e a direção da associação a ser utilizada no cálculo do estado "
+"de incidente. A chave é o nome do tipo da associação (como definido em "
+"LinkObject::Type), e o valor é a direção do IncidentLinkType (tipo de "
+"associação do incidente) que precisa ser considerada no cálculo do estado de "
+"incidente. Por exemplo, se IncidentLinkType for definido para 'DependsOn' ("
+"depende de), e a direção é 'Source' (origem), apenas associações 'DependsOn' "
+"serão consideradas (e não a associação oposta 'RequiredFor' - requerido para)"
+" no cálculo do estado de incidente. Você pode adicionar outros tipos de "
+"associação e direções como desejar, ex. 'Includes' (inclui) com a direção "
+"'Target' (alvo). Todos os tipos de associação definidos na opção LinkObject::"
+"Type do sysconfig são admitidos e a direção pode ser 'Source', 'Target' ou "
+"'Both' (ambos). IMPORTANTE: DEPOIS QUE VOCÊ FIZER AS ALTERAÇÕES NESTA OPÇÃO "
+"DO SYSCONFIG VOCÊ PRECISA EXECUTAR O COMANDO DA CONSOLE bin/otrs.Console.pl "
+"Admin::ITSM::IncidentState::Recalculate PARA QUE TODOS OS ESTADOS DE "
+"INCIDENTE SEJAM RECALCULADOS DE ACORDO COM AS NOVAS CONFIGURAÇÕES!"
 
 #. SysConfig
 msgid "Source"
-msgstr ""
+msgstr "Origem"
 
 #. SysConfig
 msgid "This setting defines that a 'ITSMChange' object can be linked with 'Ticket' objects using the 'Normal' link type."

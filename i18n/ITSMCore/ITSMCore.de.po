@@ -2,13 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMCore\n"
 "POT-Creation-Date: 2020-01-24 12:24+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-03-18 09:36+0000\n"
+"Last-Translator: Denny Korsukéwitz <dk@znuny.com>\n"
+"Language-Team: German <https://translations.znuny.org/projects/znuny/"
+"itsmcore/de/>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. Template: AdminITSMCIPAllocate
 msgid "Criticality ↔ Impact ↔ Priority"
@@ -20,7 +23,7 @@ msgstr "Verwalten Sie das Prioritätsergebnis der Kombination von Kritikalität 
 
 #. Template: AdminITSMCIPAllocate
 msgid "Priority allocation"
-msgstr "Priorität-Zuordnung"
+msgstr "Priorität zuordnen"
 
 #. Template: AdminSLA
 msgid "Minimum Time Between Incidents"
@@ -68,7 +71,7 @@ msgstr "Keine SLAID vorhanden!"
 
 #. Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
 msgid "SLAID %s not found in database!"
-msgstr "SLAID \"%s\" in der Datenbank nicht gefunden! "
+msgstr "SLAID \"%s\" in der Datenbank nicht gefunden!"
 
 #. Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
 msgid "Calendar Default"
@@ -189,6 +192,12 @@ msgstr "Verbunden mit"
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
+"Definieren Sie Actions, in denen im Verknüpfte-Objekte-Widget ein "
+"Einstellungen-Knopf verfügbar sein soll (LinkObject::ViewMode = \"complex\")"
+". Bitte beachten Sie, dass für diese Actions die folgenden JS- und CSS-"
+"Dateien registriert sein müssen: Core.AllocationList.css, "
+"Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js "
+"und Core.Agent.LinkObject.js."
 
 #. SysConfig
 msgid "Define which columns are shown in the linked Services widget (LinkObject::ViewMode = \"complex\"). Note: Only Service attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default."
@@ -244,15 +253,15 @@ msgstr "Beinhaltet"
 
 #. SysConfig
 msgid "Manage priority matrix."
-msgstr "Prioritäts-Matrix verwalten"
+msgstr "Prioritäts-Matrix verwalten."
 
 #. SysConfig
 msgid "Manage the criticality - impact - priority matrix."
-msgstr "Kritikalität - Auswirkung - Priorität-Matrix verwalten "
+msgstr "Kritikalität - Auswirkung - Priorität-Matrix verwalten."
 
 #. SysConfig
 msgid "Module to show the Back menu item in SLA menu."
-msgstr "Modul, das den \"Zurück\"-Menüeintrag im SLA-Menü anzeigt"
+msgstr "Modul, das den \"Zurück\"-Menüeintrag im SLA-Menü anzeigt."
 
 #. SysConfig
 msgid "Module to show the Back menu item in service menu."
@@ -308,7 +317,7 @@ msgstr "Service Ausdrucken."
 
 #. SysConfig
 msgid "Service Zoom."
-msgstr "Service-Detailansicht"
+msgstr "Service-Detailansicht."
 
 #. SysConfig
 msgid "Service-Area"
@@ -437,4 +446,3 @@ msgstr "Definiert den Linktyp 'RelevantTo'. Wird als SourceName und TargetName d
 #. SysConfig
 msgid "Width of ITSM textareas."
 msgstr "Anzahl der Zeichen pro Zeile in ITSM-Textfeldern."
-
