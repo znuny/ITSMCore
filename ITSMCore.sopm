@@ -103,6 +103,8 @@
         <File Permission="660" Location="scripts/test/ProcessManagement/TransitionAction/TicketSLASet.t"/>
         <File Permission="660" Location="scripts/test/ProcessManagement/TransitionAction/TicketServiceSet.t"/>
         <File Permission="660" Location="scripts/test/ProcessManagement/Process.t"/>
+        <File Permission="660" Location="scripts/test/sample/Stats/ITSMCore.Stats.Static.NotExisting.xml"/>
+        <File Permission="660" Location="scripts/test/sample/Stats/ITSMCore.Stats.TicketOverview.xml"/>
         <File Permission="660" Location="scripts/test/Stats/TicketSolutionResponseTimeGetStatElement.t"/>
         <File Permission="660" Location="scripts/test/Ticket/TicketACL.t"/>
         <File Permission="660" Location="scripts/test/Ticket/TicketServiceList.t"/>

@@ -130,11 +130,13 @@ $Selenium->RunTest(
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentStatistics;Subaction=Import");
 
         # Import test selenium statistic.
-        my $LocationNotExistingObject = $ConfigObject->Get('Home')
-            . "/scripts/test/sample/Stats/Stats.Static.NotExisting.xml";
+        my $LocationNotExistingObject = $Selenium->{'Home'}
+            . "/scripts/test/sample/Stats/ITSMCore.Stats.Static.NotExisting.xml";
         $Selenium->find_element( "#File", 'css' )->send_keys($LocationNotExistingObject);
 
         $Selenium->find_element("//button[\@value='Import'][\@type='submit']")->click();
+
+        sleep 100;
         $Selenium->WaitFor(
             JavaScript => "return typeof(\$) === 'function' && \$('.Dialog.Modal #DialogButton1').length;"
         );
@@ -155,25 +157,25 @@ $Selenium->RunTest(
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentStatistics;Subaction=Import");
 
         # Import test selenium statistic.
-        my $Location = $ConfigObject->Get('Home')
-            . "/scripts/test/sample/Stats/Stats.TicketOverview.de.xml";
+        my $Location = $Selenium->{'Home'}
+            . "/scripts/test/sample/Stats/ITSMCore.Stats.TicketOverview.xml";
         $Selenium->find_element( "#File", 'css' )->send_keys($Location);
 
         $Selenium->find_element("//button[\@value='Import'][\@type='submit']")->VerifiedClick();
 
         # Create params for import test stats.
         my %StatsValues = (
-            Title       => 'Überblick über alle Tickets im System',
+            Title       => 'Overview of all tickets in the system',
             Object      => 'Ticket',
-            Description => 'Aktueller Status aller im System befindlicher Tickets ohne Zeitbeschränkung.',
+            Description => 'Current status of all tickets in the system without time limit.',
             Format      => 'D3::BarChart',
         );
 
         # Check for imported values on test stat.
         for my $StatsValue ( sort keys %StatsValues ) {
-            $Self->True(
-                index( $Selenium->get_page_source(), $StatsValues{$StatsValue} ) > -1,
-                "Expexted param $StatsValue for imported stat is founded - $StatsValues{$StatsValue}"
+            $Selenium->PageContains(
+                String  => $StatsValues{$StatsValue},
+                Message => "Expected param $StatsValue for imported stat is founded - $StatsValues{$StatsValue}"
             );
         }
 
@@ -194,9 +196,9 @@ $Selenium->RunTest(
         my $StatsIDLast = $StatsIDs->[ $Count - 1 ];
 
         # Check for imported stats on overview screen.
-        $Self->True(
-            index( $Selenium->get_page_source(), $StatsValues{Title} ) > -1,
-            "Imported stat $StatsValues{Title} - found on overview screen"
+        $Selenium->PageContains(
+            String  => $StatsValues{Title},
+            Message => "Imported stat $StatsValues{Title} - found on overview screen",
         );
 
         # Go to imported stat to run it.
@@ -317,9 +319,9 @@ $Selenium->RunTest(
                 "return typeof(\$) === 'function' && !\$('a[href*=\"Action=AgentStatistics;Subaction=Edit;StatID=$StatsIDLast\"]').length;"
         );
 
-        $Self->True(
-            index( $Selenium->get_page_source(), "Action=AgentStatistics;Subaction=Edit;StatID=$StatsIDLast" ) == -1,
-            "Test statistic is deleted - $StatsIDLast "
+        $Selenium->PageContainsNot(
+            String  => "Action=AgentStatistics;Subaction=Edit;StatID=$StatsIDLast",
+            Message => "Test statistic is deleted - $StatsIDLast",
         );
 
         my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
