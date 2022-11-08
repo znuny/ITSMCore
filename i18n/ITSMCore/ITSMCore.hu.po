@@ -10,15 +10,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Criticality ↔ Impact ↔ Priority"
 msgstr "Kritikusság ↔ Hatás ↔ Prioritás"
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Manage the priority result of combinating Criticality ↔ Impact."
 msgstr "A Kritikusság ↔ Hatás összetétel prioritás eredményének kezelése."
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Priority allocation"
 msgstr "Prioritás lefoglalás"
 
@@ -30,31 +30,31 @@ msgstr "Az incidensek közti legkisebb idő"
 msgid "Criticality"
 msgstr "Kritikusság"
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "SLA Information"
 msgstr "SLA információk"
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Last changed"
 msgstr "Utolsó módosítás"
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Last changed by"
 msgstr "Utoljára módosította"
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Associated Services"
 msgstr "Hozzárendelt szolgáltatások"
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Service Information"
 msgstr "Szolgáltatás információk"
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Current incident state"
 msgstr "Jelenlegi incidensállapot"
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Associated SLAs"
 msgstr "Hozzárendelt SLA-k"
 
@@ -102,75 +102,75 @@ msgstr "Jelenlegi incidensállapot"
 msgid "Incident State"
 msgstr "Incidensállapot"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Operational"
 msgstr "Üzemképes"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Incident"
 msgstr "Incidens"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "End User Service"
 msgstr "Végfelhasználói szolgáltatás"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Front End"
 msgstr "Előtétprogram"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Back End"
 msgstr "Háttérprogram"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "IT Management"
 msgstr "IT menedzsment"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Reporting"
 msgstr "Jelentés"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "IT Operational"
 msgstr "IT üzemeltetés"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Demonstration"
 msgstr "Bemutató"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Project"
 msgstr "Projekt"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Underpinning Contract"
 msgstr "Megalapozó szerződés"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Other"
 msgstr "Egyéb"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Availability"
 msgstr "Elérhetőség"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Response Time"
 msgstr "Válaszidő"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Recovery Time"
 msgstr "Visszaállítási idő"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Resolution Rate"
 msgstr "Megoldási arány"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Transactions"
 msgstr "Tranzakciók"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Errors"
 msgstr "Hibák"
 
@@ -437,4 +437,8 @@ msgstr "Ez a beállítás határozza meg a „RelevantTo” hivatkozástípust. 
 #. SysConfig
 msgid "Width of ITSM textareas."
 msgstr "Az ITSM szövegdobozok szélessége."
+
+#. XML Definition: ITSMCore.sopm
+msgid "Training"
+msgstr ""
 

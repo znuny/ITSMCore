@@ -10,15 +10,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Criticality ↔ Impact ↔ Priority"
 msgstr ""
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Manage the priority result of combinating Criticality ↔ Impact."
 msgstr ""
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Priority allocation"
 msgstr "Phân bổ ưu tiên"
 
@@ -30,31 +30,31 @@ msgstr "Thời gian ngắn nhất giữa các sự cố"
 msgid "Criticality"
 msgstr "Rủi ro"
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "SLA Information"
 msgstr "Thông tin cam kết dịch vụ"
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Last changed"
 msgstr "Thay đổi lần cuối"
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Last changed by"
 msgstr ""
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Associated Services"
 msgstr "Dịch vụ liên quan"
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Service Information"
 msgstr "Thông tin dịch vụ"
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Current incident state"
 msgstr "Trạng thái sự cố hiện thời"
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Associated SLAs"
 msgstr "Cam kết dịch vụ liên quan"
 
@@ -102,75 +102,75 @@ msgstr "Trạng thái sự cố hiện thời"
 msgid "Incident State"
 msgstr "Trạng thái sự cố"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Operational"
 msgstr "Hoạt động"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Incident"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "End User Service"
 msgstr "Dịch vụ người dùng cuối"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Front End"
 msgstr "Front-end"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Back End"
 msgstr "Back-end"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "IT Management"
 msgstr "Quản trị CNTT"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Reporting"
 msgstr "Báo cáo"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "IT Operational"
 msgstr "Hoạt động CNTT"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Demonstration"
 msgstr "Thuyết minh"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Project"
 msgstr "Dự án"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Underpinning Contract"
 msgstr "Hợp đồng cơ sở"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Other"
 msgstr "Khác"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Availability"
 msgstr "Sẵn dùng"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Response Time"
 msgstr "Thời gian phản hồi"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Recovery Time"
 msgstr "Thời gian khôi phục"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Resolution Rate"
 msgstr "Tỷ lệ giải quyết"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Transactions"
 msgstr "Giao dịch"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Errors"
 msgstr "Lỗi"
 
@@ -436,5 +436,9 @@ msgstr ""
 
 #. SysConfig
 msgid "Width of ITSM textareas."
+msgstr ""
+
+#. XML Definition: ITSMCore.sopm
+msgid "Training"
 msgstr ""
 

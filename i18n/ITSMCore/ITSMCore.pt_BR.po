@@ -10,15 +10,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Criticality ↔ Impact ↔ Priority"
 msgstr "Criticalidade ↔ Impacto ↔ Prioridade"
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Manage the priority result of combinating Criticality ↔ Impact."
 msgstr "Gerencie o resultado de prioridade da combinação de Criticalidade ↔ Impacto. "
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Priority allocation"
 msgstr "Atribuição de prioridade"
 
@@ -30,31 +30,31 @@ msgstr "Tempo Mínimo entre Incidentes"
 msgid "Criticality"
 msgstr "Criticalidade"
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "SLA Information"
 msgstr "Informação de SLA"
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Last changed"
 msgstr "Última alteração"
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Last changed by"
 msgstr "Última alteração por"
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Associated Services"
 msgstr "Serviços Associados"
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Service Information"
 msgstr "Informação de serviço"
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Current incident state"
 msgstr "Estado Atual de Incidente"
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Associated SLAs"
 msgstr "SLAs Associados"
 
@@ -102,75 +102,75 @@ msgstr "Estado Atual de Incidente"
 msgid "Incident State"
 msgstr "Estado de Incidente"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Operational"
 msgstr "Operacional"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Incident"
 msgstr "Incidente"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "End User Service"
 msgstr "Serviço a Usuário Final"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Front End"
 msgstr "Front End"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Back End"
 msgstr "Back End"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "IT Management"
 msgstr "Gerenciamento de TI"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Reporting"
 msgstr "Relatório"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "IT Operational"
 msgstr "Operações de TI"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Demonstration"
 msgstr "Demonstração"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Project"
 msgstr "Projeto"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Underpinning Contract"
 msgstr "Contrato com Terceiros"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Other"
 msgstr "Outro"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Availability"
 msgstr "Disponibilidade"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Response Time"
 msgstr "Tempo de Resposta"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Recovery Time"
 msgstr "Tempo de Recuperação"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Resolution Rate"
 msgstr "Taxa de Resolução"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Transactions"
 msgstr "Transações"
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Errors"
 msgstr "Erros"
 
@@ -437,4 +437,8 @@ msgstr "Esta configuração define o tipo de link 'Relevante a'. Se o nome da fo
 #. SysConfig
 msgid "Width of ITSM textareas."
 msgstr "Número de caracteres por linha em áreas de texto ITSM."
+
+#. XML Definition: ITSMCore.sopm
+msgid "Training"
+msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMCore\n"
-"POT-Creation-Date: 2020-01-24 12:24+0000\n"
+"POT-Creation-Date: 2022-11-08 13:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,51 +10,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Criticality ↔ Impact ↔ Priority"
 msgstr ""
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Manage the priority result of combinating Criticality ↔ Impact."
 msgstr ""
 
-#. Template: AdminITSMCIPAllocate
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Priority allocation"
 msgstr ""
 
-#. Template: AdminSLA
-msgid "Minimum Time Between Incidents"
-msgstr ""
-
-#. Template: AdminService
-msgid "Criticality"
-msgstr ""
-
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "SLA Information"
 msgstr ""
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Last changed"
 msgstr ""
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Last changed by"
 msgstr ""
 
-#. Template: AgentITSMSLAZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Associated Services"
 msgstr ""
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Service Information"
 msgstr ""
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Current incident state"
 msgstr ""
 
-#. Template: AgentITSMServiceZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
 msgid "Associated SLAs"
 msgstr ""
 
@@ -102,75 +94,79 @@ msgstr ""
 msgid "Incident State"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Operational"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Incident"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "End User Service"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Front End"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Back End"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "IT Management"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Reporting"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "IT Operational"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Demonstration"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Project"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
+msgid "Training"
+msgstr ""
+
+#. XML Definition: ITSMCore.sopm
 msgid "Underpinning Contract"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Other"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Availability"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Response Time"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Recovery Time"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Resolution Rate"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Transactions"
 msgstr ""
 
-#. Database XML Definition: ITSMCore.sopm
+#. XML Definition: ITSMCore.sopm
 msgid "Errors"
 msgstr ""
 
