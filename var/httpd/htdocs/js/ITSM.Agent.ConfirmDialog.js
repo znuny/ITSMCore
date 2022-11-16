@@ -7,15 +7,9 @@
 // did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 // --
 
-
-
-
 // TODO:
 //Remove this line and fix JSDoc
-// nofilter(TidyAll::Plugin::OTRS::JavaScript::ESLint)
-
-
-
+// nofilter(TidyAll::Plugin::Znuny::JavaScript::ESLint)
 
 "use strict";
 
