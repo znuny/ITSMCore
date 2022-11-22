@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMCore\n"
 "POT-Creation-Date: 2020-01-24 12:24+0000\n"
-"PO-Revision-Date: 2022-03-18 09:36+0000\n"
+"PO-Revision-Date: 2022-11-22 08:24+0000\n"
 "Last-Translator: Denny Korsukéwitz <dk@znuny.com>\n"
 "Language-Team: German <https://translations.znuny.org/projects/znuny/"
 "itsmcore/de/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Criticality ↔ Impact ↔ Priority"
@@ -147,7 +147,7 @@ msgstr "Projekt"
 
 #. XML Definition: ITSMCore.sopm
 msgid "Underpinning Contract"
-msgstr "Underpinning Contract"
+msgstr "Grundlegender Vertrag"
 
 #. XML Definition: ITSMCore.sopm
 msgid "Other"
