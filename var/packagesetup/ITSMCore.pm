@@ -146,7 +146,7 @@ sub CodeReinstall {
 
 This function is only executed if the installed module version is smaller than 3.2.91 (3.3.0 Beta 1).
 
-my $Result = $CodeObject->CodeUpgradeFromLowerThan_3_2_91();
+    my $Result = $CodeObject->CodeUpgradeFromLowerThan_3_2_91();
 
 =cut
 
@@ -163,7 +163,7 @@ sub CodeUpgradeFromLowerThan_3_2_91 {    ## no critic
 
 This function is only executed if the installed module version is smaller than 4.0.2.
 
-my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_2();
+    my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_2();
 
 =cut
 
@@ -180,7 +180,7 @@ sub CodeUpgradeFromLowerThan_4_0_2 {    ## no critic
 
 This function is only executed if the installed module version is smaller than 4.0.91.
 
-my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_91();
+    my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_91();
 
 =cut
 
@@ -416,7 +416,7 @@ sub _CreateITSMDynamicFields {
 
 This function migrates the values for C<Criticality> and the Impact from GeneralCatalog to DynamicFields.
 
-my $Result = $CodeObject->_MigrateCriticalityAndImpactToDynamicFields();
+    my $Result = $CodeObject->_MigrateCriticalityAndImpactToDynamicFields();
 
 =cut
 

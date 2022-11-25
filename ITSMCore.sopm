@@ -71,8 +71,6 @@
         <File Permission="660" Location="Kernel/Language/zh_CN_ITSMCore.pm"/>
         <File Permission="660" Location="Kernel/Language/zh_TW_ITSMCore.pm"/>
         <File Permission="660" Location="Kernel/Modules/AdminITSMCIPAllocate.pm"/>
-        <File Permission="660" Location="Kernel/Modules/AdminService.pm"/>
-        <File Permission="660" Location="Kernel/Modules/AdminSLA.pm"/>
         <File Permission="660" Location="Kernel/Modules/AgentITSMService.pm"/>
         <File Permission="660" Location="Kernel/Modules/AgentITSMServicePrint.pm"/>
         <File Permission="660" Location="Kernel/Modules/AgentITSMServiceZoom.pm"/>
@@ -85,53 +83,22 @@
         <File Permission="660" Location="Kernel/Output/HTML/LinkObject/Service.pm"/>
         <File Permission="660" Location="Kernel/Output/JavaScript/Templates/Standard/Agent/ITSMCore/LoadingDialog.html.tmpl"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt"/>
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AdminService.tt"/>
-        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AdminSLA.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMService.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMSLA.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt"/>
-        <File Permission="660" Location="Kernel/System/Console/Command/Admin/Service/Add.pm"/>
         <File Permission="660" Location="Kernel/System/LinkObject/Service.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMCIPAllocate.pm"/>
-        <File Permission="660" Location="Kernel/System/Service.pm"/>
-        <File Permission="660" Location="Kernel/System/SLA.pm"/>
-        <File Permission="660" Location="scripts/test/Console/Command/Admin/Service/Add.t"/>
-        <File Permission="660" Location="scripts/test/GenericInterface/Operation/Ticket/TicketCreate.t"/>
-        <File Permission="660" Location="scripts/test/GenericInterface/Operation/Ticket/TicketCreateIncludeTicketData.t"/>
-        <File Permission="660" Location="scripts/test/GenericInterface/Operation/Ticket/TicketSearch.t"/>
-        <File Permission="660" Location="scripts/test/ProcessManagement/TransitionAction/TicketSLASet.t"/>
-        <File Permission="660" Location="scripts/test/ProcessManagement/TransitionAction/TicketServiceSet.t"/>
-        <File Permission="660" Location="scripts/test/ProcessManagement/Process.t"/>
         <File Permission="660" Location="scripts/test/sample/Stats/ITSMCore.Stats.Static.NotExisting.xml"/>
         <File Permission="660" Location="scripts/test/sample/Stats/ITSMCore.Stats.TicketOverview.xml"/>
-        <File Permission="660" Location="scripts/test/Stats/TicketSolutionResponseTimeGetStatElement.t"/>
-        <File Permission="660" Location="scripts/test/Ticket/TicketACL.t"/>
-        <File Permission="660" Location="scripts/test/Ticket/TicketServiceList.t"/>
-        <File Permission="660" Location="scripts/test/CustomerUserService.t"/>
         <File Permission="660" Location="scripts/test/ITSMCIPAllocate.t"/>
-        <File Permission="660" Location="scripts/test/Service.t"/>
-        <File Permission="660" Location="scripts/test/SLA.t"/>
-        <File Permission="660" Location="scripts/test/Ticket.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Agent/Admin/AdminCustomerUserService.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/Admin/AdminITSMCIPAllocate.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Agent/Admin/AdminUser.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentStatistics/Add.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentStatistics/Import.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentTicketActionCommon/AgentTicketFreeText.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMService.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMServicePrint.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMServiceZoom.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMSLA.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMSLAPrint.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/AgentITSMSLAZoom.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentTicketActionCommonACLFrontend.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Agent/AgentTicketService.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Output/PDFTicket.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Output/Preferences/Agent/CustomService.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Output/TicketZoom/TicketInformation.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Output/ToolBar/TicketService.t"/>
-        <File Permission="660" Location="scripts/test/Selenium/Output/PDFTicket.t"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfirmDialog.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.CustomerSearch.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.Service.js"/>
