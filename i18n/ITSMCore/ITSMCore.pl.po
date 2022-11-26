@@ -4,14 +4,12 @@ msgstr ""
 "POT-Creation-Date: 2020-01-24 12:24+0000\n"
 "PO-Revision-Date: 2022-05-30 21:09+0000\n"
 "Last-Translator: Daniel Lisiecki <lisiecki.daniel@gmail.com>\n"
-"Language-Team: Polish <https://translations.znuny.org/projects/znuny/"
-"itsmcore/pl/>\n"
+"Language-Team: Polish <https://translations.znuny.org/projects/znuny/itsmcore/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.11.2\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
@@ -192,20 +190,11 @@ msgstr "Połączone z"
 
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
-msgstr ""
-"Określa akcje dla których jest dostępny przycisk ustawień w widżecie "
-"połączonych obiektów (LinkObject::ViewMode = \"complex\"). Zwróć uwagę, że "
-"te akcje muszą mieć zarejestrowane następujące pliki JS i CSS: "
-"Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
-"Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
+msgstr "Określa akcje dla których jest dostępny przycisk ustawień w widżecie połączonych obiektów (LinkObject::ViewMode = \"complex\"). Zwróć uwagę, że te akcje muszą mieć zarejestrowane następujące pliki JS i CSS: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 
 #. SysConfig
 msgid "Define which columns are shown in the linked Services widget (LinkObject::ViewMode = \"complex\"). Note: Only Service attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default."
-msgstr ""
-"Określa jakie kolumny są widoczne w widżecie połączonych usług (LinkObject::"
-"ViewMode = \"complex\"). Uwaga: Tylko atrybuty usług są dozwolone jako "
-"kolumny domyślne. Możliwe ustawienia: 0 = Wyłączone, 1 = Dostępne, 2 = "
-"Włączone domyślnie."
+msgstr "Określa jakie kolumny są widoczne w widżecie połączonych usług (LinkObject::ViewMode = \"complex\"). Uwaga: Tylko atrybuty usług są dozwolone jako kolumny domyślne. Możliwe ustawienia: 0 = Wyłączone, 1 = Dostępne, 2 = Włączone domyślnie."
 
 #. SysConfig
 msgid "Depends on"
@@ -213,45 +202,31 @@ msgstr "Zależne od"
 
 #. SysConfig
 msgid "Frontend module registration for the AdminITSMCIPAllocate configuration in the admin area."
-msgstr ""
-"Rejestracja modułu frontendu w obszarze administracji dla konfigurowania "
-"AdminITSMCIPAllocate."
+msgstr "Rejestracja modułu frontendu w obszarze administracji dla konfigurowania AdminITSMCIPAllocate."
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMSLA object in the agent interface."
-msgstr ""
-"Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu "
-"AgentITSMSLA."
+msgstr "Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMSLA."
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMSLAPrint object in the agent interface."
-msgstr ""
-"Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu "
-"AgentITSMSLAPrint."
+msgstr "Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMSLAPrint."
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMSLAZoom object in the agent interface."
-msgstr ""
-"Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu "
-"AgentITSMSLAZoom."
+msgstr "Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMSLAZoom."
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMService object in the agent interface."
-msgstr ""
-"Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu "
-"AgentITSMService."
+msgstr "Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMService."
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMServicePrint object in the agent interface."
-msgstr ""
-"Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu "
-"AgentITSMServicePrint."
+msgstr "Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMServicePrint."
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMServiceZoom object in the agent interface."
-msgstr ""
-"Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu "
-"AgentITSMServiceZoom."
+msgstr "Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMServiceZoom."
 
 #. SysConfig
 msgid "ITSM SLA Overview."

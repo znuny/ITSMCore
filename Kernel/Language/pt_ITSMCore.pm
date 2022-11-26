@@ -1,9 +1,9 @@
 # --
-# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::pt_ITSMCore;
@@ -36,18 +36,18 @@ sub Data {
     $Self->{Translation}->{'Impact'} = 'Impacto';
 
     # Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
-    $Self->{Translation}->{'No SLAID is given!'} = '';
-    $Self->{Translation}->{'SLAID %s not found in database!'} = '';
-    $Self->{Translation}->{'Calendar Default'} = '';
+    $Self->{Translation}->{'No SLAID is given!'} = 'Nenhum SLAID foi informado!';
+    $Self->{Translation}->{'SLAID %s not found in database!'} = 'SLAID %s não encontrado na base de dados!';
+    $Self->{Translation}->{'Calendar Default'} = 'Calendário Padrão';
 
     # Perl Module: Kernel/Modules/AgentITSMSLAZoom.pm
-    $Self->{Translation}->{'operational'} = '';
-    $Self->{Translation}->{'warning'} = '';
-    $Self->{Translation}->{'incident'} = '';
+    $Self->{Translation}->{'operational'} = 'operativo';
+    $Self->{Translation}->{'warning'} = 'aviso';
+    $Self->{Translation}->{'incident'} = 'incidente';
 
     # Perl Module: Kernel/Modules/AgentITSMServicePrint.pm
-    $Self->{Translation}->{'No ServiceID is given!'} = '';
-    $Self->{Translation}->{'ServiceID %s not found in database!'} = '';
+    $Self->{Translation}->{'No ServiceID is given!'} = 'Nenhum ServiceID foi informado!';
+    $Self->{Translation}->{'ServiceID %s not found in database!'} = 'ServiceID %s não encontrado na base de dados!';
     $Self->{Translation}->{'Current Incident State'} = 'Estado Atual de Incidente';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/Service.pm
@@ -102,7 +102,7 @@ sub Data {
     $Self->{Translation}->{'Incident State Type'} = 'Tipo de Estado de Incidente';
     $Self->{Translation}->{'Includes'} = 'Inclui';
     $Self->{Translation}->{'Manage priority matrix.'} = 'Gerir a matriz de Prioridade';
-    $Self->{Translation}->{'Manage the criticality - impact - priority matrix.'} = '';
+    $Self->{Translation}->{'Manage the criticality - impact - priority matrix.'} = 'Gerenciar a matriz de criticidade - impacto - prioridade.';
     $Self->{Translation}->{'Module to show the Back menu item in SLA menu.'} = 'Módulo para mostrar o link voltar no menu SLA.';
     $Self->{Translation}->{'Module to show the Back menu item in service menu.'} = 'Módulo para mostrar o link voltar no menu serviço.';
     $Self->{Translation}->{'Module to show the Link menu item in service menu.'} = 'Módulo para mostrar o link associar no menu serviço.';
@@ -120,8 +120,8 @@ sub Data {
     $Self->{Translation}->{'Service Zoom.'} = 'Detalhe de Serviço';
     $Self->{Translation}->{'Service-Area'} = 'Área Serviço';
     $Self->{Translation}->{'Set the type and direction of links to be used to calculate the incident state. The key is the name of the link type (as defined in LinkObject::Type), and the value is the direction of the IncidentLinkType that should be followed to calculate the incident state. For example if the IncidentLinkType is set to \'DependsOn\', and the Direction is \'Source\', only \'Depends on\' links will be followed (and not the opposite link \'Required for\') to calculate the incident state. You can add more link types ad directions as you like, e.g. \'Includes\' with the direction \'Target\'. All link types defined in the sysconfig options LinkObject::Type are possible and the direction can be \'Source\', \'Target\', or \'Both\'. IMPORTANT: AFTER YOU MAKE CHANGES TO THIS SYSCONFIG OPTION YOU NEED TO RUN THE CONSOLE COMMAND bin/otrs.Console.pl Admin::ITSM::IncidentState::Recalculate SO THAT ALL INCIDENT STATES WILL BE RECALCULATED BASED ON THE NEW SETTINGS!'} =
-        '';
-    $Self->{Translation}->{'Source'} = '';
+        'Define o tipo e a direção da associação a ser utilizada no cálculo do estado de incidente. A chave é o nome do tipo da associação (como definido em LinkObject::Type), e o valor é a direção do IncidentLinkType (tipo de associação do incidente) que precisa ser considerada no cálculo do estado de incidente. Por exemplo, se IncidentLinkType for definido para \'DependsOn\' (depende de), e a direção é \'Source\' (origem), apenas associações \'DependsOn\' serão consideradas (e não a associação oposta \'RequiredFor\' - requerido para) no cálculo do estado de incidente. Você pode adicionar outros tipos de associação e direções como desejar, ex. \'Includes\' (inclui) com a direção \'Target\' (alvo). Todos os tipos de associação definidos na opção LinkObject::Type do sysconfig são admitidos e a direção pode ser \'Source\', \'Target\' ou \'Both\' (ambos). IMPORTANTE: DEPOIS QUE VOCÊ FIZER AS ALTERAÇÕES NESTA OPÇÃO DO SYSCONFIG VOCÊ PRECISA EXECUTAR O COMANDO DA CONSOLE bin/otrs.Console.pl Admin::ITSM::IncidentState::Recalculate PARA QUE TODOS OS ESTADOS DE INCIDENTE SEJAM RECALCULADOS DE ACORDO COM AS NOVAS CONFIGURAÇÕES!';
+    $Self->{Translation}->{'Source'} = 'Origem';
     $Self->{Translation}->{'This setting defines that a \'ITSMChange\' object can be linked with \'Ticket\' objects using the \'Normal\' link type.'} =
         'Esta configuração define que um objeto \'MudançaITSM\' pode ser associado com objetos \'Ticket\' com ligação \'Normal\'.';
     $Self->{Translation}->{'This setting defines that a \'ITSMConfigItem\' object can be linked with \'FAQ\' objects using the \'Normal\' link type.'} =

@@ -1,9 +1,9 @@
 # --
-# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::nb_NO_ITSMCore;
@@ -18,7 +18,7 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
     $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = 'Kritikalitet ↔ Omfang ↔ Prioritet';
     $Self->{Translation}->{'Manage the priority result of combinating Criticality ↔ Impact.'} =
-        'Administrer prioritetsresultat ved å kombinere Kritikalitet ↔ Omfang';
+        'Administrer prioritetsresultat ved å kombinere Kritikalitet ↔ Omfang.';
     $Self->{Translation}->{'Priority allocation'} = 'Tildeling av prioritet';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
@@ -36,19 +36,19 @@ sub Data {
     $Self->{Translation}->{'Impact'} = 'Omfang';
 
     # Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
-    $Self->{Translation}->{'No SLAID is given!'} = '';
-    $Self->{Translation}->{'SLAID %s not found in database!'} = '';
-    $Self->{Translation}->{'Calendar Default'} = '';
+    $Self->{Translation}->{'No SLAID is given!'} = 'Ingen SLAID er gitt!';
+    $Self->{Translation}->{'SLAID %s not found in database!'} = 'SLAID %s finnes ikke i databasen!';
+    $Self->{Translation}->{'Calendar Default'} = 'Standardverdi fra kalender';
 
     # Perl Module: Kernel/Modules/AgentITSMSLAZoom.pm
-    $Self->{Translation}->{'operational'} = '';
-    $Self->{Translation}->{'warning'} = '';
-    $Self->{Translation}->{'incident'} = '';
+    $Self->{Translation}->{'operational'} = 'operativ';
+    $Self->{Translation}->{'warning'} = 'advarsel';
+    $Self->{Translation}->{'incident'} = 'hendelse';
 
     # Perl Module: Kernel/Modules/AgentITSMServicePrint.pm
-    $Self->{Translation}->{'No ServiceID is given!'} = '';
-    $Self->{Translation}->{'ServiceID %s not found in database!'} = '';
-    $Self->{Translation}->{'Current Incident State'} = 'Tilstand på nåværende hendelse';
+    $Self->{Translation}->{'No ServiceID is given!'} = 'Ingen tjenesteID er gitt!';
+    $Self->{Translation}->{'ServiceID %s not found in database!'} = 'TjenesteID %s finnes ikke i databasen!';
+    $Self->{Translation}->{'Current Incident State'} = 'Nåværende hendelsestilstand';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/Service.pm
     $Self->{Translation}->{'Incident State'} = 'Hendelsestilstand';
@@ -66,7 +66,7 @@ sub Data {
     $Self->{Translation}->{'Project'} = 'Prosjekt';
     $Self->{Translation}->{'Training'} = '';
     $Self->{Translation}->{'Underpinning Contract'} = 'Underliggende kontrakt';
-    $Self->{Translation}->{'Other'} = 'Andre';
+    $Self->{Translation}->{'Other'} = 'Annet';
     $Self->{Translation}->{'Availability'} = 'Tilgjengelighet';
     $Self->{Translation}->{'Response Time'} = 'Responstid';
     $Self->{Translation}->{'Recovery Time'} = 'Gjenoppretningstid';
@@ -86,38 +86,38 @@ sub Data {
     $Self->{Translation}->{'Frontend module registration for the AdminITSMCIPAllocate configuration in the admin area.'} =
         'Registrering av frontend-modul for konfigurasjon av AdminITSMCIPAllocate i admin-området.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMSLA object in the agent interface.'} =
-        'Registrering av frontend-modul for AgentITSMSLA-objektet i saksbehandler-delen';
+        'Registrering av frontend-modul for AgentITSMSLA-objektet i saksbehandler-delen.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMSLAPrint object in the agent interface.'} =
-        'Registrering av frontend-modul for AgentITSMSLAPrint-objektet i saksbehandler-delen';
+        'Registrering av frontend-modul for AgentITSMSLAPrint-objektet i saksbehandler-delen.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMSLAZoom object in the agent interface.'} =
-        'Registrering av frontend-modul for AgentITSMSLAZoom-objektet i saksbehandler-delen';
+        'Registrering av frontend-modul for AgentITSMSLAZoom-objektet i saksbehandler-delen.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMService object in the agent interface.'} =
-        'Registrering av frontend-modul for AgentITSMService-objektet i saksbehandler-delen';
+        'Registrering av frontend-modul for AgentITSMService-objektet i saksbehandler-delen.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMServicePrint object in the agent interface.'} =
-        'Registrering av frontend-modul for AgentITSMServicePrint-objektet i saksbehandler-delen';
+        'Registrering av frontend-modul for AgentITSMServicePrint-objektet i saksbehandler-delen.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMServiceZoom object in the agent interface.'} =
-        'Registrering av frontend-modul for AgentITSMServiceZoom-objektet i saksbehandler-delen';
-    $Self->{Translation}->{'ITSM SLA Overview.'} = 'SLA-oversikt';
-    $Self->{Translation}->{'ITSM Service Overview.'} = 'ITSM-Tjenesteoversikt';
+        'Registrering av frontend-modul for AgentITSMServiceZoom-objektet i saksbehandler-delen.';
+    $Self->{Translation}->{'ITSM SLA Overview.'} = 'ITSM SLA-oversikt.';
+    $Self->{Translation}->{'ITSM Service Overview.'} = 'ITSM-Tjenesteoversikt.';
     $Self->{Translation}->{'Incident State Type'} = 'Type hendelsestilstand';
     $Self->{Translation}->{'Includes'} = 'Inkluderer';
-    $Self->{Translation}->{'Manage priority matrix.'} = 'Administrér prioritetsmatrise';
-    $Self->{Translation}->{'Manage the criticality - impact - priority matrix.'} = '';
-    $Self->{Translation}->{'Module to show the Back menu item in SLA menu.'} = 'Modul som viser tilbake-lenken i SLA-menyen';
-    $Self->{Translation}->{'Module to show the Back menu item in service menu.'} = 'Modul som viser tilbake-lenken i tjenestemenyen';
-    $Self->{Translation}->{'Module to show the Link menu item in service menu.'} = 'Modul som viser lenke-lenken i tjeneste-menyen';
-    $Self->{Translation}->{'Module to show the Print menu item in SLA menu.'} = 'Modul som viser skriv-ut-lenken i SLA-menyen';
-    $Self->{Translation}->{'Module to show the Print menu item in service menu.'} = 'Modul som viser skriv-ut-lenken i tjenestemenyen';
-    $Self->{Translation}->{'Parameters for the incident states in the preference view.'} = 'Parametre for hendelsestilstander i valgvisningen';
+    $Self->{Translation}->{'Manage priority matrix.'} = 'Administrér prioritetsmatrise.';
+    $Self->{Translation}->{'Manage the criticality - impact - priority matrix.'} = 'Administrér kritikalitets-/omfangs-/prioritetsmatrisen.';
+    $Self->{Translation}->{'Module to show the Back menu item in SLA menu.'} = 'Modul som viser tilbake-lenken i SLA-menyen.';
+    $Self->{Translation}->{'Module to show the Back menu item in service menu.'} = 'Modul som viser tilbake-lenken i tjenestemenyen.';
+    $Self->{Translation}->{'Module to show the Link menu item in service menu.'} = 'Modul som viser lenke-lenken i tjeneste-menyen.';
+    $Self->{Translation}->{'Module to show the Print menu item in SLA menu.'} = 'Modul som viser skriv-ut-lenken i SLA-menyen.';
+    $Self->{Translation}->{'Module to show the Print menu item in service menu.'} = 'Modul som viser skriv-ut-lenken i tjenestemenyen.';
+    $Self->{Translation}->{'Parameters for the incident states in the preference view.'} = 'Parametre for hendelsestilstander i valgvisningen.';
     $Self->{Translation}->{'Part of'} = 'Del av';
     $Self->{Translation}->{'Relevant to'} = 'Relevant for';
     $Self->{Translation}->{'Required for'} = 'Påkrevd for';
     $Self->{Translation}->{'SLA Overview'} = 'SLA-oversikt';
-    $Self->{Translation}->{'SLA Print.'} = 'SLA-utskrift';
+    $Self->{Translation}->{'SLA Print.'} = 'SLA-utskrift.';
     $Self->{Translation}->{'SLA Zoom.'} = 'SLA-detaljer.';
-    $Self->{Translation}->{'Service Overview'} = 'Tjeneste-oversikt';
-    $Self->{Translation}->{'Service Print.'} = 'Tjenesteutskrift';
-    $Self->{Translation}->{'Service Zoom.'} = 'Tjenestedetaljer';
+    $Self->{Translation}->{'Service Overview'} = 'Tjenesteoversikt';
+    $Self->{Translation}->{'Service Print.'} = 'Tjenesteutskrift.';
+    $Self->{Translation}->{'Service Zoom.'} = 'Tjenestedetaljer.';
     $Self->{Translation}->{'Service-Area'} = 'Tjenesteområde';
     $Self->{Translation}->{'Set the type and direction of links to be used to calculate the incident state. The key is the name of the link type (as defined in LinkObject::Type), and the value is the direction of the IncidentLinkType that should be followed to calculate the incident state. For example if the IncidentLinkType is set to \'DependsOn\', and the Direction is \'Source\', only \'Depends on\' links will be followed (and not the opposite link \'Required for\') to calculate the incident state. You can add more link types ad directions as you like, e.g. \'Includes\' with the direction \'Target\'. All link types defined in the sysconfig options LinkObject::Type are possible and the direction can be \'Source\', \'Target\', or \'Both\'. IMPORTANT: AFTER YOU MAKE CHANGES TO THIS SYSCONFIG OPTION YOU NEED TO RUN THE CONSOLE COMMAND bin/otrs.Console.pl Admin::ITSM::IncidentState::Recalculate SO THAT ALL INCIDENT STATES WILL BE RECALCULATED BASED ON THE NEW SETTINGS!'} =
         '';

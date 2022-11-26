@@ -4,8 +4,7 @@ msgstr ""
 "POT-Creation-Date: 2020-01-24 12:24+0000\n"
 "PO-Revision-Date: 2022-07-30 16:10+0000\n"
 "Last-Translator: Peter Værlien <peter.varlien@kdrs.no>\n"
-"Language-Team: Norwegian Bokmål <https://translations.znuny.org/projects/"
-"znuny/itsmcore/nb_NO/>\n"
+"Language-Team: Norwegian Bokmål <https://translations.znuny.org/projects/znuny/itsmcore/nb_NO/>\n"
 "Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -207,39 +206,27 @@ msgstr "Registrering av frontend-modul for konfigurasjon av AdminITSMCIPAllocate
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMSLA object in the agent interface."
-msgstr ""
-"Registrering av frontend-modul for AgentITSMSLA-objektet i saksbehandler-"
-"delen."
+msgstr "Registrering av frontend-modul for AgentITSMSLA-objektet i saksbehandler-delen."
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMSLAPrint object in the agent interface."
-msgstr ""
-"Registrering av frontend-modul for AgentITSMSLAPrint-objektet i "
-"saksbehandler-delen."
+msgstr "Registrering av frontend-modul for AgentITSMSLAPrint-objektet i saksbehandler-delen."
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMSLAZoom object in the agent interface."
-msgstr ""
-"Registrering av frontend-modul for AgentITSMSLAZoom-objektet i saksbehandler-"
-"delen."
+msgstr "Registrering av frontend-modul for AgentITSMSLAZoom-objektet i saksbehandler-delen."
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMService object in the agent interface."
-msgstr ""
-"Registrering av frontend-modul for AgentITSMService-objektet i saksbehandler-"
-"delen."
+msgstr "Registrering av frontend-modul for AgentITSMService-objektet i saksbehandler-delen."
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMServicePrint object in the agent interface."
-msgstr ""
-"Registrering av frontend-modul for AgentITSMServicePrint-objektet i "
-"saksbehandler-delen."
+msgstr "Registrering av frontend-modul for AgentITSMServicePrint-objektet i saksbehandler-delen."
 
 #. SysConfig
 msgid "Frontend module registration for the AgentITSMServiceZoom object in the agent interface."
-msgstr ""
-"Registrering av frontend-modul for AgentITSMServiceZoom-objektet i "
-"saksbehandler-delen."
+msgstr "Registrering av frontend-modul for AgentITSMServiceZoom-objektet i saksbehandler-delen."
 
 #. SysConfig
 msgid "ITSM SLA Overview."

@@ -1,9 +1,9 @@
 # --
-# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::de_ITSMCore;
@@ -19,7 +19,7 @@ sub Data {
     $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = 'Kritikalität ↔ Auswirkung ↔ Priorität';
     $Self->{Translation}->{'Manage the priority result of combinating Criticality ↔ Impact.'} =
         'Verwalten Sie das Prioritätsergebnis der Kombination von Kritikalität ↔ Auswirkungen.';
-    $Self->{Translation}->{'Priority allocation'} = 'Priorität-Zuordnung';
+    $Self->{Translation}->{'Priority allocation'} = 'Priorität zuordnen';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
     $Self->{Translation}->{'SLA Information'} = 'SLA-Informationen';
@@ -37,7 +37,7 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
     $Self->{Translation}->{'No SLAID is given!'} = 'Keine SLAID vorhanden!';
-    $Self->{Translation}->{'SLAID %s not found in database!'} = 'SLAID "%s" in der Datenbank nicht gefunden! ';
+    $Self->{Translation}->{'SLAID %s not found in database!'} = 'SLAID "%s" in der Datenbank nicht gefunden!';
     $Self->{Translation}->{'Calendar Default'} = 'Kalender Standard';
 
     # Perl Module: Kernel/Modules/AgentITSMSLAZoom.pm
@@ -65,7 +65,7 @@ sub Data {
     $Self->{Translation}->{'Demonstration'} = 'Demonstration';
     $Self->{Translation}->{'Project'} = 'Projekt';
     $Self->{Translation}->{'Training'} = '';
-    $Self->{Translation}->{'Underpinning Contract'} = 'Underpinning Contract';
+    $Self->{Translation}->{'Underpinning Contract'} = 'Grundlegender Vertrag';
     $Self->{Translation}->{'Other'} = 'Sonstiges';
     $Self->{Translation}->{'Availability'} = 'Verfügbarkeit';
     $Self->{Translation}->{'Response Time'} = 'Reaktionszeit';
@@ -79,7 +79,7 @@ sub Data {
     $Self->{Translation}->{'Both'} = 'Beide';
     $Self->{Translation}->{'Connected to'} = 'Verbunden mit';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
-        '';
+        'Definieren Sie Actions, in denen im Verknüpfte-Objekte-Widget ein Einstellungen-Knopf verfügbar sein soll (LinkObject::ViewMode = "complex"). Bitte beachten Sie, dass für diese Actions die folgenden JS- und CSS-Dateien registriert sein müssen: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js und Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define which columns are shown in the linked Services widget (LinkObject::ViewMode = "complex"). Note: Only Service attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.'} =
         'Definiert welche Spalten im Widget "Verknüpfte Services" angezeigt werden (LinkObject::ViewMode = "complex"). Hinweis: Es sind nur Service-Eigenschaften als Default-Spalten erlaubt. Mögliche Werte: 0 = Deaktiviert, 1 = Verfügbar, 2 = Standardmäßig aktiviert.';
     $Self->{Translation}->{'Depends on'} = 'Hängt ab von';
@@ -101,9 +101,9 @@ sub Data {
     $Self->{Translation}->{'ITSM Service Overview.'} = 'ITSM-Services-Übersicht.';
     $Self->{Translation}->{'Incident State Type'} = 'Vorfallstatus-Typ';
     $Self->{Translation}->{'Includes'} = 'Beinhaltet';
-    $Self->{Translation}->{'Manage priority matrix.'} = 'Prioritäts-Matrix verwalten';
-    $Self->{Translation}->{'Manage the criticality - impact - priority matrix.'} = 'Kritikalität - Auswirkung - Priorität-Matrix verwalten ';
-    $Self->{Translation}->{'Module to show the Back menu item in SLA menu.'} = 'Modul, das den "Zurück"-Menüeintrag im SLA-Menü anzeigt';
+    $Self->{Translation}->{'Manage priority matrix.'} = 'Prioritäts-Matrix verwalten.';
+    $Self->{Translation}->{'Manage the criticality - impact - priority matrix.'} = 'Kritikalität - Auswirkung - Priorität-Matrix verwalten.';
+    $Self->{Translation}->{'Module to show the Back menu item in SLA menu.'} = 'Modul, das den "Zurück"-Menüeintrag im SLA-Menü anzeigt.';
     $Self->{Translation}->{'Module to show the Back menu item in service menu.'} = 'Modul, das den "Zurück"-Menüeintrag im Service-Menü anzeigt.';
     $Self->{Translation}->{'Module to show the Link menu item in service menu.'} = 'Modul, dass den "Verküpfen"-Menüeintrag im Service-Menü anzeigt.';
     $Self->{Translation}->{'Module to show the Print menu item in SLA menu.'} = 'Modul, dass den "Ausdrucken"-Menüeintrag im SLA-Menü anzeigt.';
@@ -117,7 +117,7 @@ sub Data {
     $Self->{Translation}->{'SLA Zoom.'} = 'SLA-Detailansicht.';
     $Self->{Translation}->{'Service Overview'} = 'Service-Übersicht';
     $Self->{Translation}->{'Service Print.'} = 'Service Ausdrucken.';
-    $Self->{Translation}->{'Service Zoom.'} = 'Service-Detailansicht';
+    $Self->{Translation}->{'Service Zoom.'} = 'Service-Detailansicht.';
     $Self->{Translation}->{'Service-Area'} = 'Service-Bereich';
     $Self->{Translation}->{'Set the type and direction of links to be used to calculate the incident state. The key is the name of the link type (as defined in LinkObject::Type), and the value is the direction of the IncidentLinkType that should be followed to calculate the incident state. For example if the IncidentLinkType is set to \'DependsOn\', and the Direction is \'Source\', only \'Depends on\' links will be followed (and not the opposite link \'Required for\') to calculate the incident state. You can add more link types ad directions as you like, e.g. \'Includes\' with the direction \'Target\'. All link types defined in the sysconfig options LinkObject::Type are possible and the direction can be \'Source\', \'Target\', or \'Both\'. IMPORTANT: AFTER YOU MAKE CHANGES TO THIS SYSCONFIG OPTION YOU NEED TO RUN THE CONSOLE COMMAND bin/otrs.Console.pl Admin::ITSM::IncidentState::Recalculate SO THAT ALL INCIDENT STATES WILL BE RECALCULATED BASED ON THE NEW SETTINGS!'} =
         'Setzen des Typs und der Richtung der verwendeten Links, um den Vorfallstatus zu berechnen. Der Schlüssel ist der Name des Link-Typs (wie in LinkObject::Type definiert), und der Wert ist die Richtung des IncidentLinkType, die befolgt werden soll, um den Incident-Status zu berechnen. Zum Beispiel, wenn der IncidentLinkType auf \'DependsOn\' und als Richtung \'Quelle\' gesetzt ist, wird nur \'Depends\' Links gefolgt (und nicht dem Gegenteil \'Benötigt für\') um den IncidentState zu berechnen. Sie können soviele Link-Typen und Richtungen hinzufügen wie Sie möchten, z.B.: \'Enthält\' mit der Richtung \'Target\'. Alle in der Sysconfig unter Linkobject::Type definierten Verknüpfungsarten sind möglich sind und die Richtung kann \'Quelle\', \'Ziel\' oder \'Beide\' sein. WICHTIG: Nachdem Sie Änderungen an dieser Sysconfig-Einstellung gemacht haben, führen Sie das Skript bin/otrs.ITSMConfigItemIncidentStateRecalculate.pl SO aus, damit alle Vorfallstatus anhand der neuen Einstellungen berechnet werden.';

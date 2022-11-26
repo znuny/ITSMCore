@@ -1,9 +1,9 @@
 # --
-# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::pl_ITSMCore;
@@ -18,12 +18,12 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
     $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = 'Krytyczność ↔ Wpływ ↔ Priorytet';
     $Self->{Translation}->{'Manage the priority result of combinating Criticality ↔ Impact.'} =
-        'Zarządzaj wynikowym priorytetem z kombinacji Krytyczność ↔ Wpływ';
+        'Zarządzaj wynikowym priorytetem z kombinacji Krytyczność ↔ Wpływ.';
     $Self->{Translation}->{'Priority allocation'} = 'Alokacja priorytetu';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
     $Self->{Translation}->{'SLA Information'} = 'Informacje SLA';
-    $Self->{Translation}->{'Last changed'} = 'Ostatnia zmiana';
+    $Self->{Translation}->{'Last changed'} = 'Ostatnio zmienione';
     $Self->{Translation}->{'Last changed by'} = 'Ostatnio zmienione przez';
     $Self->{Translation}->{'Associated Services'} = 'Połączone usługi';
 
@@ -36,18 +36,18 @@ sub Data {
     $Self->{Translation}->{'Impact'} = 'Wpływ';
 
     # Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
-    $Self->{Translation}->{'No SLAID is given!'} = '';
-    $Self->{Translation}->{'SLAID %s not found in database!'} = '';
-    $Self->{Translation}->{'Calendar Default'} = '';
+    $Self->{Translation}->{'No SLAID is given!'} = 'Brak SLAID!';
+    $Self->{Translation}->{'SLAID %s not found in database!'} = 'SLAID %s nie znalezione w bazie danych!';
+    $Self->{Translation}->{'Calendar Default'} = 'Kalendarz domyślny';
 
     # Perl Module: Kernel/Modules/AgentITSMSLAZoom.pm
-    $Self->{Translation}->{'operational'} = '';
-    $Self->{Translation}->{'warning'} = '';
-    $Self->{Translation}->{'incident'} = '';
+    $Self->{Translation}->{'operational'} = 'operacyjny';
+    $Self->{Translation}->{'warning'} = 'ostrzeżenie';
+    $Self->{Translation}->{'incident'} = 'incydent';
 
     # Perl Module: Kernel/Modules/AgentITSMServicePrint.pm
-    $Self->{Translation}->{'No ServiceID is given!'} = '';
-    $Self->{Translation}->{'ServiceID %s not found in database!'} = '';
+    $Self->{Translation}->{'No ServiceID is given!'} = 'Brak ServiceID!';
+    $Self->{Translation}->{'ServiceID %s not found in database!'} = 'ServiceID %s nie znaleziony w bazie danych!';
     $Self->{Translation}->{'Current Incident State'} = 'Aktualny stan incydentu';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/Service.pm
@@ -76,33 +76,33 @@ sub Data {
 
     # SysConfig
     $Self->{Translation}->{'Alternative to'} = 'Alternatywa dla';
-    $Self->{Translation}->{'Both'} = '';
+    $Self->{Translation}->{'Both'} = 'Oba';
     $Self->{Translation}->{'Connected to'} = 'Połączone z';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
-        '';
+        'Określa akcje dla których jest dostępny przycisk ustawień w widżecie połączonych obiektów (LinkObject::ViewMode = "complex"). Zwróć uwagę, że te akcje muszą mieć zarejestrowane następujące pliki JS i CSS: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define which columns are shown in the linked Services widget (LinkObject::ViewMode = "complex"). Note: Only Service attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.'} =
-        '';
+        'Określa jakie kolumny są widoczne w widżecie połączonych usług (LinkObject::ViewMode = "complex"). Uwaga: Tylko atrybuty usług są dozwolone jako kolumny domyślne. Możliwe ustawienia: 0 = Wyłączone, 1 = Dostępne, 2 = Włączone domyślnie.';
     $Self->{Translation}->{'Depends on'} = 'Zależne od';
     $Self->{Translation}->{'Frontend module registration for the AdminITSMCIPAllocate configuration in the admin area.'} =
-        '';
+        'Rejestracja modułu frontendu w obszarze administracji dla konfigurowania AdminITSMCIPAllocate.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMSLA object in the agent interface.'} =
-        '';
+        'Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMSLA.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMSLAPrint object in the agent interface.'} =
-        '';
+        'Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMSLAPrint.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMSLAZoom object in the agent interface.'} =
-        '';
+        'Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMSLAZoom.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMService object in the agent interface.'} =
-        '';
+        'Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMService.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMServicePrint object in the agent interface.'} =
-        '';
+        'Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMServicePrint.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMServiceZoom object in the agent interface.'} =
-        '';
-    $Self->{Translation}->{'ITSM SLA Overview.'} = '';
-    $Self->{Translation}->{'ITSM Service Overview.'} = '';
-    $Self->{Translation}->{'Incident State Type'} = '';
+        'Rejestracja modułu frontendu w interfejsie agenta dla konfigurowania obiektu AgentITSMServiceZoom.';
+    $Self->{Translation}->{'ITSM SLA Overview.'} = 'Przegląd SLA ITSM.';
+    $Self->{Translation}->{'ITSM Service Overview.'} = 'Przegląd Usług ITSM.';
+    $Self->{Translation}->{'Incident State Type'} = 'Typ stanu incydentu';
     $Self->{Translation}->{'Includes'} = 'Zawiera';
     $Self->{Translation}->{'Manage priority matrix.'} = 'Zarządzaj macierzą priorytetów.';
-    $Self->{Translation}->{'Manage the criticality - impact - priority matrix.'} = '';
+    $Self->{Translation}->{'Manage the criticality - impact - priority matrix.'} = 'Zarządzaj macierzą krytyczność - wpływ - priorytet.';
     $Self->{Translation}->{'Module to show the Back menu item in SLA menu.'} = 'Moduł pokazywania linku powrotu w menu SLA.';
     $Self->{Translation}->{'Module to show the Back menu item in service menu.'} = 'Moduł pokazywania linku powrotu w menu serwisowym.';
     $Self->{Translation}->{'Module to show the Link menu item in service menu.'} = 'Moduł pokazywania linku w menu serwisowym.';
@@ -113,11 +113,11 @@ sub Data {
     $Self->{Translation}->{'Relevant to'} = 'Odpowiednie do';
     $Self->{Translation}->{'Required for'} = 'Potrzebne do';
     $Self->{Translation}->{'SLA Overview'} = 'Przegląd SLA';
-    $Self->{Translation}->{'SLA Print.'} = '';
-    $Self->{Translation}->{'SLA Zoom.'} = '';
+    $Self->{Translation}->{'SLA Print.'} = 'Drukuj SLA.';
+    $Self->{Translation}->{'SLA Zoom.'} = 'Podgląd SLA.';
     $Self->{Translation}->{'Service Overview'} = 'Przegląd usług';
-    $Self->{Translation}->{'Service Print.'} = '';
-    $Self->{Translation}->{'Service Zoom.'} = '';
+    $Self->{Translation}->{'Service Print.'} = 'Drukuj Usługę.';
+    $Self->{Translation}->{'Service Zoom.'} = 'Podgląd Usługi.';
     $Self->{Translation}->{'Service-Area'} = 'Sekcja serwisowa';
     $Self->{Translation}->{'Set the type and direction of links to be used to calculate the incident state. The key is the name of the link type (as defined in LinkObject::Type), and the value is the direction of the IncidentLinkType that should be followed to calculate the incident state. For example if the IncidentLinkType is set to \'DependsOn\', and the Direction is \'Source\', only \'Depends on\' links will be followed (and not the opposite link \'Required for\') to calculate the incident state. You can add more link types ad directions as you like, e.g. \'Includes\' with the direction \'Target\'. All link types defined in the sysconfig options LinkObject::Type are possible and the direction can be \'Source\', \'Target\', or \'Both\'. IMPORTANT: AFTER YOU MAKE CHANGES TO THIS SYSCONFIG OPTION YOU NEED TO RUN THE CONSOLE COMMAND bin/otrs.Console.pl Admin::ITSM::IncidentState::Recalculate SO THAT ALL INCIDENT STATES WILL BE RECALCULATED BASED ON THE NEW SETTINGS!'} =
         '';
