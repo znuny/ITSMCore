@@ -105,6 +105,7 @@
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ServiceZoom.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.SLA.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.SLAZoom.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.UserSearch.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.Zoom.js"/>
         <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Agent.Default.css"/>
         <File Permission="660" Location="var/httpd/htdocs/skins/Agent/default/css/ITSM.Agent.Detail.css"/>
@@ -439,12 +440,6 @@
         You are about to install the OTRS package ITSMCore.<br/>
         <br/>
         <br/>
-        <strong>REQUIRED OTRS PACKAGES</strong>
-        <ul>
-        <li>GeneralCatalog 6.0.30</li>
-        </ul>
-        <br/>
-        <br/>
         ((enjoy))<br/>
         <br/>
 
@@ -456,12 +451,6 @@
         <br/>
         <br/>
         Sie sind im Begriff das OTRS-Paket ITSMCore zu installieren.<br/>
-        <br/>
-        <br/>
-        <strong>BENÖTIGTE OTRS-PAKETE</strong>
-        <ul>
-        <li>GeneralCatalog 6.0.30</li>
-        </ul>
         <br/>
         <br/>
         ((enjoy))<br/>
@@ -477,12 +466,6 @@
         Usted está apunto de instalar el modulo ITSMCore de OTRS.<br/>
         <br/>
         <br/>
-        <strong>PAQUETES REQUERIDOS</strong>
-        <ul>
-        <li>GeneralCatalog 6.0.30</li>
-        </ul>
-        <br/>
-        <br/>
         ((enjoy))<br/>
         <br/>
 
@@ -494,12 +477,6 @@
         <br/>
         <br/>
         Ön az ITSMCore OTRS csomag telepítésére készül.<br/>
-        <br/>
-        <br/>
-        <strong>SZÜKSÉGES OTRS CSOMAGOK</strong>
-        <ul>
-        <li>GeneralCatalog 6.0.30</li>
-        </ul>
         <br/>
         <br/>
         ((enjoy))<br/>
@@ -579,12 +556,6 @@
         You are about to upgrade the OTRS package ITSMCore.<br/>
         <br/>
         <br/>
-        <strong>REQUIRED OTRS PACKAGES</strong>
-        <ul>
-        <li>GeneralCatalog 6.0.30</li>
-        </ul>
-        <br/>
-        <br/>
         ((enjoy))<br/>
         <br/>
 
@@ -596,12 +567,6 @@
         <br/>
         <br/>
         Sie sind im Begriff das OTRS-Paket ITSMCore zu aktualisieren.<br/>
-        <br/>
-        <br/>
-        <strong>BENÖTIGTE OTRS-PAKETE</strong>
-        <ul>
-        <li>GeneralCatalog 6.0.30</li>
-        </ul>
         <br/>
         <br/>
         ((enjoy))<br/>
@@ -617,12 +582,6 @@
         Usted está apunto de instalar el modulo ITSMCore de OTRS.<br/>
         <br/>
         <br/>
-        <strong>PAQUETES REQUERIDOS</strong>
-        <ul>
-        <li>GeneralCatalog 6.0.30</li>
-        </ul>
-        <br/>
-        <br/>
         ((enjoy))<br/>
         <br/>
 
@@ -634,12 +593,6 @@
         <br/>
         <br/>
         Ön az ITSMCore OTRS csomag frissítésére készül.<br/>
-        <br/>
-        <br/>
-        <strong>SZÜKSÉGES OTRS CSOMAGOK</strong>
-        <ul>
-        <li>GeneralCatalog 6.0.30</li>
-        </ul>
         <br/>
         <br/>
         ((enjoy))<br/>
