@@ -7,9 +7,9 @@
     <Vendor>Znuny</Vendor>
     <URL>https://www.znuny.org/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
-    <Description Lang="en">The OTRS::ITSM Core package.</Description>
-    <Description Lang="de">Das OTRS::ITSM Core Paket.</Description>
-    <Description Lang="hu">Az OTRS::ITSM alapcsomag.</Description>
+    <Description Lang="en">The Znuny::ITSM Core package.</Description>
+    <Description Lang="de">Das Znuny::ITSM Core Paket.</Description>
+    <Description Lang="hu">Az Znuny::ITSM alapcsomag.</Description>
     <ChangeLog Version="6.4.3" Date="2022-11-09 09:29:08 +0100">Updated translations.</ChangeLog>
     <ChangeLog Version="6.4.2" Date="2022-07-28 15:20:39 +0200">Initial release for Znuny 6.4.2.</ChangeLog>
     <ChangeLog Version="6.3.3" Date="2022-04-28 10:14:17 +0200">Release for Znuny 6.3.3.</ChangeLog>
@@ -437,7 +437,7 @@
         <strong>WELCOME</strong>
         <br/>
         <br/>
-        You are about to install the OTRS package ITSMCore.<br/>
+        You are about to install the Znuny package ITSMCore.<br/>
         <br/>
         <br/>
         ((enjoy))<br/>
@@ -450,7 +450,7 @@
         <strong>WILLKOMMEN</strong>
         <br/>
         <br/>
-        Sie sind im Begriff das OTRS-Paket ITSMCore zu installieren.<br/>
+        Sie sind im Begriff das Znuny-Paket ITSMCore zu installieren.<br/>
         <br/>
         <br/>
         ((enjoy))<br/>
@@ -463,7 +463,7 @@
         <strong>BIENVENIDO</strong>
         <br/>
         <br/>
-        Usted está apunto de instalar el modulo ITSMCore de OTRS.<br/>
+        Usted está apunto de instalar el modulo ITSMCore de Znuny.<br/>
         <br/>
         <br/>
         ((enjoy))<br/>
@@ -476,7 +476,7 @@
         <strong>ÜDVÖZÖLJÜK</strong>
         <br/>
         <br/>
-        Ön az ITSMCore OTRS csomag telepítésére készül.<br/>
+        Ön az ITSMCore Znuny csomag telepítésére készül.<br/>
         <br/>
         <br/>
         ((enjoy))<br/>
@@ -553,7 +553,7 @@
         <strong>WELCOME</strong>
         <br/>
         <br/>
-        You are about to upgrade the OTRS package ITSMCore.<br/>
+        You are about to upgrade the Znuny package ITSMCore.<br/>
         <br/>
         <br/>
         ((enjoy))<br/>
@@ -566,7 +566,7 @@
         <strong>WILLKOMMEN</strong>
         <br/>
         <br/>
-        Sie sind im Begriff das OTRS-Paket ITSMCore zu aktualisieren.<br/>
+        Sie sind im Begriff das Znuny-Paket ITSMCore zu aktualisieren.<br/>
         <br/>
         <br/>
         ((enjoy))<br/>
@@ -579,7 +579,7 @@
         <strong>BIENVENIDO</strong>
         <br/>
         <br/>
-        Usted está apunto de instalar el modulo ITSMCore de OTRS.<br/>
+        Usted está apunto de instalar el modulo ITSMCore de Znuny.<br/>
         <br/>
         <br/>
         ((enjoy))<br/>
@@ -592,7 +592,7 @@
         <strong>ÜDVÖZÖLJÜK</strong>
         <br/>
         <br/>
-        Ön az ITSMCore OTRS csomag frissítésére készül.<br/>
+        Ön az ITSMCore Znuny csomag frissítésére készül.<br/>
         <br/>
         <br/>
         ((enjoy))<br/>
