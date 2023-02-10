@@ -431,6 +431,7 @@
         <Value>
             <Array>
                 <Item>ITSM.Agent.CustomerSearch.js</Item>
+                <Item>ITSM.Agent.UserSearch.js</Item>
             </Array>
         </Value>
     </Setting>
