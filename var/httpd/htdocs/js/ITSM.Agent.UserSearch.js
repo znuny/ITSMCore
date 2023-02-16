@@ -47,9 +47,9 @@ ITSM.Agent.UserSearch = (function (TargetNS) {
                         $.each(Result, function () {
                             ValueData.push({
                                 label: this.UserValue + " (" + this.UserKey + ")",
-                                value: this.UserValue,
+                                value: this.UserKey,
                                 key:   this.UserKey,
-                                show:  this.UserValue  //  todo denny delete?
+                                show:  this.UserValue,
                             });
                         });
                         Response(ValueData);
