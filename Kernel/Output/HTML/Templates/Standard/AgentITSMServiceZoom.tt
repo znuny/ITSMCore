@@ -8,7 +8,6 @@
 # --
 
 <div class="MainBox ARIARoleMain">
-    <div class="ClearLeft"></div>
     <div class="Headline">
         <div class="Flag" title="[% Translate(Data.CurInciState) | html %]">
             <span class="[% Data.CurInciSignal | html %]"></span>
@@ -28,37 +27,41 @@
                 </div>
                 <div class="Content">
                     <fieldset class="TableLike FixedLabelSmall Tight">
-
-                        <label>[% Translate("Current incident state") | html %]:</label>
-                        <div class="Value">
-                            <div class="Flag Small">
-                                <span class="[% Data.CurInciSignal | html %]"></span>
+                        <span>
+                            <label>[% Translate("Current incident state") | html %]</label>
+                            <div class="Value">
+                                <div class="Flag Small">
+                                    <span class="[% Data.CurInciSignal | html %]"></span>
+                                </div>
+                                [% Translate(Data.CurInciState) | html %]
                             </div>
-                            [% Translate(Data.CurInciState) | html %]
-                        </div>
-                        <div class="Clear"></div>
+                        </span>
 
-                        <label>[% Translate("Created") | html %]:</label>
-                        <p class="Value">[% Data.CreateTime | Localize("TimeLong") %]</p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Created") | html %]</label>
+                            <p class="Value">[% Data.CreateTime | Localize("TimeLong") %]</p>
+                        </span>
 
-                        <label>[% Translate("Created by") | html %]:</label>
-                        <p class="Value">
-                            [% Data.CreateByName | html %]
-                        </p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Created by") | html %]</label>
+                            <p class="Value">
+                                [% Data.CreateByName | html %]
+                            </p>
+                        </span>
 
-                        <label>[% Translate("Last changed") | html %]:</label>
-                        <p class="Value">
-                            [% Data.ChangeTime | Localize("TimeLong") %]
-                        </p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Last changed") | html %]</label>
+                            <p class="Value">
+                                [% Data.ChangeTime | Localize("TimeLong") %]
+                            </p>
+                        </span>
 
-                        <label>[% Translate("Last changed by") | html %]:</label>
-                        <p class="Value">
-                            [% Data.ChangeByName | html %]
-                        </p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Last changed by") | html %]</label>
+                            <p class="Value">
+                                [% Data.ChangeByName | html %]
+                            </p>
+                        </span>
                     </fieldset>
                 </div>
             </div>
@@ -74,10 +77,7 @@
             </div>
 [% RenderBlockEnd("LinkTableSimple") %]
         </div>
-
-        <div class="ContentColumn">
-            <div class="ControlRow">
-            </div>
+        <div class="ContentColumn WidgetSimple">
             <div class="ActionRow">
                 <ul class="Actions">
 [% RenderBlockStart("MenuItem") %]
@@ -86,40 +86,41 @@
                     </li>
 [% RenderBlockEnd("MenuItem") %]
                 </ul>
-                <div class="Clear"></div>
             </div>
-
-            <div class="WidgetBox SpacingTop Expanded">
+            <div class="WidgetSimple WidgetBox Expanded row-of-columns">
                 <div class="LightRow Header">
                     <div class="WidgetAction Toggle"><a href="#" title="[% Translate("Show or hide the content.") | html %]"><i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i></a></div>
                     <h2>[% Translate("Service") | html %]: [% Data.Name | html %]</h2>
                 </div>
                 <div class="Content AutoHeight">
-                    <fieldset class="TableLike FixedLabelSmall">
-                        <label title="[% Translate("Type") | html %]">[% Translate("Type") | html %]: </label>
-                        <div class="Field">
-                            [% Translate(Data.Type) | html %]
+                    <fieldset class="TableLike FixedLabelSmall full-width">
+                        <div class="field-wrapper">
+                            <label title="[% Translate("Type") | html %]">[% Translate("Type") | html %]</label>
+                            <div class="Field">
+                                [% Translate(Data.Type) | html %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 
-                        <label>[% Translate("Criticality") | html %]: </label>
-                        <div class="Field">
-                            [% Translate(Data.Criticality) | html %]
+                        <div class="field-wrapper">
+                            <label>[% Translate("Criticality") | html %]</label>
+                            <div class="Field">
+                                [% Translate(Data.Criticality) | html %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 
-                        <label title="[% Translate("Comment") | html %]">[% Translate("Comment") | html %]: </label>
-                        <div class="Field">
-                            [% Translate(Data.Comment) | html %]
+                        <div class="field-wrapper">
+                            <label title="[% Translate("Comment") | html %]">[% Translate("Comment") | html %]</label>
+                            <div class="Field">
+                                [% Translate(Data.Comment) | html %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 
                     </fieldset>
                 </div>
             </div>
 
 [% RenderBlockStart("SLA") %]
-            <div class="WidgetSimple DontPrint SpacingTop  SpacingBottomMedium">
+            <div class="WidgetSimple DontPrint">
                 <div class="Header">
                     <div class="WidgetAction Toggle">
                         <a href="#" title="[% Translate("Show or hide the content") | html %]"><i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i></a>
@@ -162,6 +163,5 @@
 [% RenderBlockEnd("LinkTableComplex") %]
 
         </div>
-        <div class="Clear"></div>
     </div>
 </div>

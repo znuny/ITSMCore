@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>ITSMCore</Name>
-    <Version>6.5.2</Version>
-    <Framework>6.5.x</Framework>
-    <PackageRequired Version="6.5.1">GeneralCatalog</PackageRequired>
+    <Version>6.5.1</Version>
+    <Framework>7.0.x</Framework>
+    <PackageRequired Version="7.0.1">GeneralCatalog</PackageRequired>
     <Vendor>Znuny</Vendor>
     <URL>https://www.znuny.org/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>

@@ -18,7 +18,7 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
  * @subsection  Flag
  */
 
-fieldset.TableLike div.Value .Flag {
+/*fieldset.TableLike div.Value .Flag {
     float: left;
     margin-right: 5px;
     margin-top: 3px;
@@ -42,7 +42,7 @@ ul.ITSMFlag div.Value .Flag {
 .RTL fieldset.TableLike div.Value .Flag {
     float: right;
     margin-left: 5px;
-}
+}*/
 
 .Flag span.grayled {
     background-color:#cdcdcd;
@@ -85,18 +85,20 @@ ul.ITSMFlag div.Value .Flag {
  *           that are inside a Field Div .
  */
 
-label.SubElement {
+/*label.SubElement {
     width: 40% !important;
     margin-right: 10px;
-}
+}*/
 
+label.SubElement,
+label.SubElement + .Field,
 div.SubElement {
-    margin-left: 40% !important;
+    margin-left: var(--margin-xl);
 }
 
-div.SubElement input.W50pc {
+/*div.SubElement input.W50pc {
     width: 33%;
-}
+}*/
 
 /**
  * @subsection NoDoubleBorders

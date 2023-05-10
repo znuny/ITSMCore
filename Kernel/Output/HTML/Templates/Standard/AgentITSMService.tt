@@ -8,14 +8,15 @@
 # --
 
 [% RenderBlockStart("Overview") %]
-<div class="MainBox AriaRoleMain SpacingTop">
-    <div class="W75pc SpacingBottom CenterBox">
+
+<div class="MainBox AriaRoleMain">
+    <div>
         <div class="WidgetSimple">
             <div class="Header">
                 <h2>[% Translate("Overview") | html %]: [% Translate("Service") | html %]</h2>
             </div>
-            <div class="Content SpacingBottom">
-                <table class="DataTable SpacingTop">
+            <div class="Content">
+                <table class="DataTable">
                     <thead>
                         <tr>
                             <th>[% Translate("State") | html %]</th>

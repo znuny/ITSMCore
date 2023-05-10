@@ -21,23 +21,24 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 /**
  * @subsection  ITSM tree
  */
-#ITSMTree {
+/*#ITSMTree {
     margin-top: 20px;
-}
+}*/
 
 
 /**
  * @subsection  ITSM table body
  */
-#ITSMTableBody {
+/*#ITSMTableBody {
     position: relative;
     overflow: hidden;
     border-bottom: none;
-}
+}*/
 
 #ITSMTableBody .Scroller {
     height: 140px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    width: 100%;
 }
 
 /**
@@ -46,11 +47,15 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 
 
 .ITSMItemView {
-    float: right;
+    margin-left: auto;
+}
+
+.ITSMItemView > a.Active {
+    background: var(--gray-dark-semi);
 }
 
 .RTL .ITSMItemView {
-    float: left;
+    margin-right: auto;
 }
 
 

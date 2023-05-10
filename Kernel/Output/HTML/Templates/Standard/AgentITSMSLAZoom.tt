@@ -7,7 +7,6 @@
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
 
-
 <div class="MainBox ARIARoleMain">
     <div class="ClearLeft"></div>
     <div class="Headline">
@@ -25,36 +24,37 @@
                 </div>
                 <div class="Content">
                     <fieldset class="TableLike FixedLabelSmall Tight">
-                        <label>[% Translate("Created") | html %]:</label>
-                        <p class="Value">[% Data.CreateTime | Localize("TimeLong") %]</p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Created") | html %]</label>
+                            <p class="Value">[% Data.CreateTime | Localize("TimeLong") %]</p>
+                        </span>
 
-                        <label>[% Translate("Created by") | html %]:</label>
-                        <p class="Value">
-                            [% Data.CreateByName | html %]
-                        </p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Created by") | html %]</label>
+                            <p class="Value">
+                                [% Data.CreateByName | html %]
+                            </p>
+                        </span>
 
-                        <label>[% Translate("Last changed") | html %]:</label>
-                        <p class="Value">
-                            [% Data.ChangeTime | Localize("TimeLong") %]
-                        </p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Last changed") | html %]</label>
+                            <p class="Value">
+                                [% Data.ChangeTime | Localize("TimeLong") %]
+                            </p>
+                        </span>
 
-                        <label>[% Translate("Last changed by") | html %]:</label>
-                        <p class="Value">
-                            [% Data.ChangeByName | html %]
-                        </p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Last changed by") | html %]</label>
+                            <p class="Value">
+                                [% Data.ChangeByName | html %]
+                            </p>
+                        </span>
                     </fieldset>
                 </div>
             </div>
         </div>
 
-
-        <div class="ContentColumn">
-            <div class="ControlRow">
-            </div>
+        <div class="ContentColumn WidgetSimple">
             <div class="ActionRow">
                 <ul class="Actions">
 [% RenderBlockStart("MenuItem") %]
@@ -65,55 +65,61 @@
                 </ul>
             </div>
 
-            <div class="WidgetBox SpacingTop Expanded">
+            <div class="WidgetBox Expanded WidgetSimple row-of-columns">
                 <div class="LightRow Header">
                     <div class="WidgetAction Toggle"><a href="#" title="[% Translate("Show or hide the content.") | html %]"><i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i></a></div>
                     <h2>[% Translate("SLA") | html %]: [% Data.Name | html %]</h2>
                 </div>
                 <div class="Content AutoHeight">
                     <fieldset class="TableLike FixedLabel">
-                        <label>[% Translate("Type") | html %]: </label>
-                        <div class="Field">
-                            [% Translate(Data.Type) | html %]
+                        <div class="field-wrapper">
+                            <label>[% Translate("Type") | html %]</label>
+                            <div class="Field">
+                                [% Translate(Data.Type) | html %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 
-                        <label>[% Translate("Calendar") | html %]: </label>
-                        <div class="Field">
-                            [% Data.CalendarName | html %]
+                        <div class="field-wrapper">
+                            <label>[% Translate("Calendar") | html %]</label>
+                            <div class="Field">
+                                [% Data.CalendarName | html %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 
-                        <label>[% Translate("First Response Time") | html %]: </label>
-                        <div class="Field">
-                            [% Data.FirstResponseTime | html %] [% Translate("minutes") | html %]
+                        <div class="field-wrapper">
+                            <label>[% Translate("First Response Time") | html %]</label>
+                            <div class="Field">
+                                [% Data.FirstResponseTime | html %] [% Translate("minutes") | html %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 
-                        <label>[% Translate("Update Time") | html %]: </label>
-                        <div class="Field">
-                            [% Data.UpdateTime | html %] [% Translate("minutes") | html %]
+                        <div class="field-wrapper">
+                            <label>[% Translate("Update Time") | html %]</label>
+                            <div class="Field">
+                                [% Data.UpdateTime | html %] [% Translate("minutes") | html %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 
-                        <label>[% Translate("Solution Time") | html %]: </label>
-                        <div class="Field">
-                            [% Data.SolutionTime | html %] [% Translate("minutes") | html %]
+                        <div class="field-wrapper">
+                            <label>[% Translate("Solution Time") | html %]</label>
+                            <div class="Field">
+                                [% Data.SolutionTime | html %] [% Translate("minutes") | html %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 
-                        <label>[% Translate("Minimum Time Between Incidents") | html %]: </label>
-                        <div class="Field">
-                            [% Data.MinTimeBetweenIncidents | html %] [% Translate("minutes") | html %]
+                        <div class="field-wrapper">
+                            <label>[% Translate("Minimum Time Between Incidents") | html %]</label>
+                            <div class="Field">
+                                [% Data.MinTimeBetweenIncidents | html %] [% Translate("minutes") | html %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
 
-                        <label>[% Translate("Comment") | html %]: </label>
-                        <div class="Field">
-                            [% Data.Comment | html %]
+                        <div class="field-wrapper">
+                            <label>[% Translate("Comment") | html %]</label>
+                            <div class="Field">
+                                [% Data.Comment | html %]
+                            </div>
                         </div>
-                        <div class="Clear"></div>
-
                     </fieldset>
                 </div>
             </div>
@@ -162,7 +168,6 @@
                 </div>
             </div>
 [% RenderBlockEnd("Service") %]
-
         </div>
     </div>
 </div>
