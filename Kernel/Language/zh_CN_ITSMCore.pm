@@ -16,9 +16,9 @@ sub Data {
     my $Self = shift;
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
-    $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = '紧急度 ↔ 影响 ↔ 优先级';
     $Self->{Translation}->{'Manage the priority result of combinating Criticality ↔ Impact.'} =
         '管理"紧急度 ↔ 影响"组合的优先级结果。';
+    $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = '紧急度 ↔ 影响 ↔ 优先级';
     $Self->{Translation}->{'Priority allocation'} = '优先级分配';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
@@ -31,9 +31,6 @@ sub Data {
     $Self->{Translation}->{'Service Information'} = '服务信息';
     $Self->{Translation}->{'Current incident state'} = '当前故障状态';
     $Self->{Translation}->{'Associated SLAs'} = '关联的SLA';
-
-    # Perl Module: Kernel/Modules/AdminITSMCIPAllocate.pm
-    $Self->{Translation}->{'Impact'} = '影响';
 
     # Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
     $Self->{Translation}->{'No SLAID is given!'} = '没有指定SLA ID！';

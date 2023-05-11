@@ -16,9 +16,9 @@ sub Data {
     my $Self = shift;
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
-    $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = 'Criticidade ↔ Impacto ↔ Prioridade';
     $Self->{Translation}->{'Manage the priority result of combinating Criticality ↔ Impact.'} =
         'Gerir a Prioridade resultante da combinação Criticidade ↔ Impacto.';
+    $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = 'Criticidade ↔ Impacto ↔ Prioridade';
     $Self->{Translation}->{'Priority allocation'} = 'Atribuição de Prioridade';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
@@ -31,9 +31,6 @@ sub Data {
     $Self->{Translation}->{'Service Information'} = 'Informação de serviço';
     $Self->{Translation}->{'Current incident state'} = 'Estado Atual de Incidente';
     $Self->{Translation}->{'Associated SLAs'} = 'SLAs Associados';
-
-    # Perl Module: Kernel/Modules/AdminITSMCIPAllocate.pm
-    $Self->{Translation}->{'Impact'} = 'Impacto';
 
     # Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
     $Self->{Translation}->{'No SLAID is given!'} = 'Nenhum SLAID foi informado!';
@@ -48,7 +45,7 @@ sub Data {
     # Perl Module: Kernel/Modules/AgentITSMServicePrint.pm
     $Self->{Translation}->{'No ServiceID is given!'} = 'Nenhum ServiceID foi informado!';
     $Self->{Translation}->{'ServiceID %s not found in database!'} = 'ServiceID %s não encontrado na base de dados!';
-    $Self->{Translation}->{'Current Incident State'} = 'Estado Atual de Incidente';
+    $Self->{Translation}->{'Current Incident State'} = 'Estado do Incidente Atual';
 
     # Perl Module: Kernel/Output/HTML/LinkObject/Service.pm
     $Self->{Translation}->{'Incident State'} = 'Estado de Incidente';
@@ -64,7 +61,7 @@ sub Data {
     $Self->{Translation}->{'IT Operational'} = 'Operações de TI';
     $Self->{Translation}->{'Demonstration'} = 'Demonstração';
     $Self->{Translation}->{'Project'} = 'Projeto';
-    $Self->{Translation}->{'Training'} = '';
+    $Self->{Translation}->{'Training'} = 'Treino';
     $Self->{Translation}->{'Underpinning Contract'} = 'Contrato com Terceiros';
     $Self->{Translation}->{'Other'} = 'Outro';
     $Self->{Translation}->{'Availability'} = 'Disponibilidade';

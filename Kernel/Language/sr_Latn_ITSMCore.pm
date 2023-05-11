@@ -16,9 +16,9 @@ sub Data {
     my $Self = shift;
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
-    $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = 'Značaj ↔ uticaj ↔ prioritet';
     $Self->{Translation}->{'Manage the priority result of combinating Criticality ↔ Impact.'} =
         'Upravljanje rezultatom prioriteta kombinovanjem značaj ↔ uticaj.';
+    $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = 'Značaj ↔ uticaj ↔ prioritet';
     $Self->{Translation}->{'Priority allocation'} = 'Raspodela prioriteta';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
@@ -31,9 +31,6 @@ sub Data {
     $Self->{Translation}->{'Service Information'} = 'Servisna informacija';
     $Self->{Translation}->{'Current incident state'} = 'Trenutno stanje incidenta';
     $Self->{Translation}->{'Associated SLAs'} = 'Povezani SLA';
-
-    # Perl Module: Kernel/Modules/AdminITSMCIPAllocate.pm
-    $Self->{Translation}->{'Impact'} = 'Uticaj';
 
     # Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
     $Self->{Translation}->{'No SLAID is given!'} = 'Nije dat SLAID!';
