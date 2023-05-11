@@ -1242,7 +1242,7 @@ sub _AddPackageRepository {
     my @CurrentEffectiveValue = @{ $Setting{EffectiveValue} // [] };
 
     # If ITSM repository is already present, leave SysConfig option as it is.
-    my $ITSMRepositoryURL     = 'https://download.znuny.org/releases/itsm/packages6x/';
+    my $ITSMRepositoryURL     = 'https://download.znuny.org/releases/itsm/packages7/';
     my $ITSMRepositoryPresent = grep { $_->{URL} eq $ITSMRepositoryURL } @CurrentEffectiveValue;
     return 1 if $ITSMRepositoryPresent;
 
