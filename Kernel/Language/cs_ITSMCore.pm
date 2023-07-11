@@ -32,9 +32,6 @@ sub Data {
     $Self->{Translation}->{'Current incident state'} = '';
     $Self->{Translation}->{'Associated SLAs'} = 'Přiřazené SLA smlouvy';
 
-    # Perl Module: Kernel/Modules/AdminITSMCIPAllocate.pm
-    $Self->{Translation}->{'Impact'} = 'Vliv';
-
     # Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
     $Self->{Translation}->{'No SLAID is given!'} = '';
     $Self->{Translation}->{'SLAID %s not found in database!'} = '';

@@ -32,9 +32,6 @@ sub Data {
     $Self->{Translation}->{'Current incident state'} = '当前故障状态';
     $Self->{Translation}->{'Associated SLAs'} = '关联的SLA';
 
-    # Perl Module: Kernel/Modules/AdminITSMCIPAllocate.pm
-    $Self->{Translation}->{'Impact'} = '影响';
-
     # Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
     $Self->{Translation}->{'No SLAID is given!'} = '没有指定SLA ID！';
     $Self->{Translation}->{'SLAID %s not found in database!'} = '数据库中找不到SLAID %s！';

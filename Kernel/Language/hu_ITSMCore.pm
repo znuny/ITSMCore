@@ -32,9 +32,6 @@ sub Data {
     $Self->{Translation}->{'Current incident state'} = 'Jelenlegi incidensállapot';
     $Self->{Translation}->{'Associated SLAs'} = 'Hozzárendelt SLA-k';
 
-    # Perl Module: Kernel/Modules/AdminITSMCIPAllocate.pm
-    $Self->{Translation}->{'Impact'} = 'Hatás';
-
     # Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
     $Self->{Translation}->{'No SLAID is given!'} = 'Nincs SLA-azonosító megadva!';
     $Self->{Translation}->{'SLAID %s not found in database!'} = 'A(z) %s SLA-azonosító nem található az adatbázisban!';
@@ -64,7 +61,7 @@ sub Data {
     $Self->{Translation}->{'IT Operational'} = 'IT üzemeltetés';
     $Self->{Translation}->{'Demonstration'} = 'Bemutató';
     $Self->{Translation}->{'Project'} = 'Projekt';
-    $Self->{Translation}->{'Training'} = '';
+    $Self->{Translation}->{'Training'} = 'Oktatás';
     $Self->{Translation}->{'Underpinning Contract'} = 'Megalapozó szerződés';
     $Self->{Translation}->{'Other'} = 'Egyéb';
     $Self->{Translation}->{'Availability'} = 'Elérhetőség';

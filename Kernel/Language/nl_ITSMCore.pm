@@ -32,9 +32,6 @@ sub Data {
     $Self->{Translation}->{'Current incident state'} = 'Huidige incidentstatus';
     $Self->{Translation}->{'Associated SLAs'} = 'Bijbehorende SLA\'s';
 
-    # Perl Module: Kernel/Modules/AdminITSMCIPAllocate.pm
-    $Self->{Translation}->{'Impact'} = 'Impact';
-
     # Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
     $Self->{Translation}->{'No SLAID is given!'} = 'Er wordt geen SLAID gegeven!';
     $Self->{Translation}->{'SLAID %s not found in database!'} = 'SLAID %s niet gevonden in database!';
