@@ -240,6 +240,8 @@ sub CodeUninstall {
         Name => 'itsm-service',
     );
 
+    $Self->_RemovePackageRepository(%Param);
+
     return 1;
 }
 
@@ -1241,9 +1243,12 @@ sub _AddPackageRepository {
 
     my @CurrentEffectiveValue = @{ $Setting{EffectiveValue} // [] };
 
+    # Repository URLs of the bundle for the current and the last version.
+    my $OldITSMRepositoryURL     = 'https://download.znuny.org/releases/itsm/packages6/';
+    my $CurrentITSMRepositoryURL = 'https://download.znuny.org/releases/itsm/packages6x/';
+
     # If ITSM repository is already present, leave SysConfig option as it is.
-    my $ITSMRepositoryURL     = 'https://download.znuny.org/releases/itsm/packages6x/';
-    my $ITSMRepositoryPresent = grep { $_->{URL} eq $ITSMRepositoryURL } @CurrentEffectiveValue;
+    my $ITSMRepositoryPresent = grep { $_->{URL} eq $CurrentITSMRepositoryURL } @CurrentEffectiveValue;
     return 1 if $ITSMRepositoryPresent;
 
     # Add ITSM repository.
@@ -1254,15 +1259,21 @@ sub _AddPackageRepository {
     my $ExampleRepositoryPresent     = grep { $_->{Name} eq $ExampleRepositoryName } @CurrentEffectiveValue;
     my $OnlyExampleRepositoryPresent = @CurrentEffectiveValue == 1 && $ExampleRepositoryPresent;
     my $SetSysConfigOptionValid      = ( $Setting{IsValid} || $OnlyExampleRepositoryPresent ) ? 1 : 0;
+    my $OldITSMRepositoryPresent     = grep { $_->{URL} eq $OldITSMRepositoryURL } @CurrentEffectiveValue;
 
     my @NewEffectiveValue = @CurrentEffectiveValue;
+
+    # Remove Example Repository and old ITSM Repository.
     if ($ExampleRepositoryPresent) {
         @NewEffectiveValue = grep { $_->{Name} ne $ExampleRepositoryName } @NewEffectiveValue;
+    }
+    if ($OldITSMRepositoryPresent) {
+        @NewEffectiveValue = grep { $_->{URL} ne $OldITSMRepositoryURL } @NewEffectiveValue;
     }
 
     push @NewEffectiveValue, {
         Name            => 'Znuny::ITSM',
-        URL             => $ITSMRepositoryURL,
+        URL             => $CurrentITSMRepositoryURL,
         AuthHeaderKey   => '',
         AuthHeaderValue => '',
     };
@@ -1275,6 +1286,46 @@ sub _AddPackageRepository {
                 Name           => $SysConfigOptionName,
                 EffectiveValue => \@NewEffectiveValue,
                 IsValid        => $SetSysConfigOptionValid,
+            },
+        ],
+    );
+
+    return $Success;
+}
+
+=head2 _RemovePackageRepository()
+
+    Removes the ITSM package repository to the repository list.
+
+=cut
+
+sub _RemovePackageRepository {
+    my ( $Self, %Param ) = @_;
+
+    my $SysConfigObject = $Kernel::OM->Get('Kernel::System::SysConfig');
+
+    my $SysConfigOptionName = 'Package::RepositoryList';
+
+    my %Setting = $SysConfigObject->SettingGet(
+        Name => $SysConfigOptionName,
+    );
+    return if !%Setting;
+
+    my @CurrentEffectiveValue = @{ $Setting{EffectiveValue} // [] };
+
+    # Repository URL of the ITSM packages for the current version.
+    my $CurrentITSMRepositoryURL = 'https://download.znuny.org/releases/itsm/packages6x/';
+
+    my @NewEffectiveValue = grep { $_->{URL} ne $CurrentITSMRepositoryURL } @CurrentEffectiveValue;
+
+    my $Success = $SysConfigObject->SettingsSet(
+        UserID   => 1,
+        Comments => 'Znuny::ITSMCore package setup',
+        Settings => [
+            {
+                Name           => $SysConfigOptionName,
+                EffectiveValue => \@NewEffectiveValue,
+                IsValid        => $Setting{IsValid},
             },
         ],
     );
