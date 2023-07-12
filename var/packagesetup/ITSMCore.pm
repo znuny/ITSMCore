@@ -240,6 +240,8 @@ sub CodeUninstall {
         Name => 'itsm-service',
     );
 
+    $Self->_RemovePackageRepository(%Param);
+
     return 1;
 }
 
@@ -1284,6 +1286,46 @@ sub _AddPackageRepository {
                 Name           => $SysConfigOptionName,
                 EffectiveValue => \@NewEffectiveValue,
                 IsValid        => $SetSysConfigOptionValid,
+            },
+        ],
+    );
+
+    return $Success;
+}
+
+=head2 _RemovePackageRepository()
+
+Removes the ITSM package repository to the repository list.
+
+=cut
+
+sub _RemovePackageRepository {
+    my ( $Self, %Param ) = @_;
+
+    my $SysConfigObject = $Kernel::OM->Get('Kernel::System::SysConfig');
+
+    my $SysConfigOptionName = 'Package::RepositoryList';
+
+    my %Setting = $SysConfigObject->SettingGet(
+        Name => $SysConfigOptionName,
+    );
+    return if !%Setting;
+
+    my @CurrentEffectiveValue = @{ $Setting{EffectiveValue} // [] };
+
+    # Repository URL of the ITSM packages for the current version.
+    my $CurrentITSMRepositoryURL = 'https://download.znuny.org/releases/itsm/packages7/';
+
+    my @NewEffectiveValue = grep { $_->{URL} ne $CurrentITSMRepositoryURL } @CurrentEffectiveValue;
+
+    my $Success = $SysConfigObject->SettingsSet(
+        UserID   => 1,
+        Comments => 'Znuny::ITSMCore package setup',
+        Settings => [
+            {
+                Name           => $SysConfigOptionName,
+                EffectiveValue => \@NewEffectiveValue,
+                IsValid        => $Setting{IsValid},
             },
         ],
     );
