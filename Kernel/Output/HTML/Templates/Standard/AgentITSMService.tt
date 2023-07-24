@@ -7,15 +7,28 @@
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
 
+<div class="MainBox ARIARoleMain LayoutFixedSidebar SidebarFirst">
+    <div class="SidebarColumn">
+[% RenderBlockStart("Filter") %]
+        <div class="WidgetSimple">
+            <div class="Header">
+                <h2><label for="Filter">[% Translate("Filter for Items") | html %]</label></h2>
+            </div>
+            <div class="Content">
+                <input type="text" id="Filter" class="FilterBox" placeholder="[% Translate("Just start typing to filter...") | html %]" name="Filter" value="" title="[% Translate("Filter for Items") | html %]" />
+            </div>
+        </div>
+[% RenderBlockEnd("Filter") %]
+    </div>
+    <div class="ContentColumn">
+
 [% RenderBlockStart("Overview") %]
-<div class="MainBox AriaRoleMain SpacingTop">
-    <div class="W75pc SpacingBottom CenterBox">
         <div class="WidgetSimple">
             <div class="Header">
                 <h2>[% Translate("Overview") | html %]: [% Translate("Service") | html %]</h2>
             </div>
             <div class="Content SpacingBottom">
-                <table class="DataTable SpacingTop">
+                <table id="Services" class="DataTable SpacingTop">
                     <thead>
                         <tr>
                             <th>[% Translate("State") | html %]</th>
@@ -57,6 +70,7 @@
                 </table>
             </div>
         </div>
-    </div>
-</div>
 [% RenderBlockEnd("Overview") %]
+    </div>
+    <div class="Clear"></div>
+</div>

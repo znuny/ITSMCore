@@ -38,6 +38,8 @@ sub Run {
         Data => {%Param},
     );
 
+    $LayoutObject->Block( Name => 'Filter' );
+
     # get service list
     my $ServiceList = $Kernel::OM->Get('Kernel::System::Service')->ServiceListGet(
         UserID => $Self->{UserID},
