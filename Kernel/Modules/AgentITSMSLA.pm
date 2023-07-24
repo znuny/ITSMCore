@@ -38,6 +38,8 @@ sub Run {
         Data => {%Param},
     );
 
+    $LayoutObject->Block( Name => 'Filter' );
+
     # get sla object
     my $SLAObject = $Kernel::OM->Get('Kernel::System::SLA');
 

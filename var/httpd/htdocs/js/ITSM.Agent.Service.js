@@ -30,6 +30,8 @@ ITSM.Agent = ITSM.Agent || {};
      */
     TargetNS.Init = function() {
 
+        Core.UI.Table.InitTableFilter($('#Filter'), $('#Services'));
+
         $('.MasterAction').bind('click', function (Event) {
             var $MasterActionLink = $(this).find('.MasterActionLink');
             // only act if the link was not clicked directly
