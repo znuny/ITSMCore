@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>ITSMCore</Name>
-    <Version>7.0.3</Version>
+    <Version>7.0.4</Version>
     <Framework>7.0.x</Framework>
     <PackageRequired Version="7.0.1">GeneralCatalog</PackageRequired>
     <Vendor>Znuny</Vendor>
@@ -10,6 +10,8 @@
     <Description Lang="en">The Znuny::ITSM Core package.</Description>
     <Description Lang="de">Das Znuny::ITSM Core Paket.</Description>
     <Description Lang="hu">Az Znuny::ITSM alapcsomag.</Description>
+    <ChangeLog Version="7.0.4" Date="2023-07-25 12:17:41 +0200">- Added filter option for SLA and service detail view&#13;
+- Updated ProductName</ChangeLog>
     <ChangeLog Version="7.0.3" Date="2023-07-12 12:34:19 +0200">Improved ITSM repository handling</ChangeLog>
     <ChangeLog Version="7.0.2" Date="2023-05-11 14:49:36 +0200">Updated repository URL for Znuny 7 ITSM packages.&#13;
 Updated Translations.</ChangeLog>
