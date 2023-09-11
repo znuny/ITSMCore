@@ -40,7 +40,7 @@ msgstr "Mwisho kubadilishwa"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Last changed by"
-msgstr "Mwsho kubadilishwa na"
+msgstr "Mwisho kubadilishwa na"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Associated Services"

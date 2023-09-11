@@ -24,7 +24,7 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
     $Self->{Translation}->{'SLA Information'} = 'Taarifa za SLA';
     $Self->{Translation}->{'Last changed'} = 'Mwisho kubadilishwa';
-    $Self->{Translation}->{'Last changed by'} = 'Mwsho kubadilishwa na';
+    $Self->{Translation}->{'Last changed by'} = 'Mwisho kubadilishwa na';
     $Self->{Translation}->{'Associated Services'} = 'Huduma zinazohusika';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
