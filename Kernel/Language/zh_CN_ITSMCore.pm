@@ -178,7 +178,7 @@ sub Data {
     $Self->{Translation}->{'Width of ITSM textareas.'} = 'ITSM模块中文本输入区域的宽度。';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     );
 
 }

@@ -178,7 +178,7 @@ sub Data {
     $Self->{Translation}->{'Width of ITSM textareas.'} = 'Anchura das áreas de texto da ITSM.';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     );
 
 }
