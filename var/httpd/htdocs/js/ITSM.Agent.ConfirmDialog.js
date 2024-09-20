@@ -122,6 +122,31 @@ ITSM.Agent.ConfirmDialog = (function (TargetNS) {
                 }];
             }
 
+            // 'Delete' opens a dialog with 2 button: Cancel and Delete
+            else if (Response.DialogType === 'Delete') {
+
+                // define buttons
+                Buttons = [
+                    {
+                        Label: Core.Language.Translate("Cancel"),
+                        Class: 'btn-cancel-ghost',
+                        Type: "Close"
+                    },
+                    {
+                        Label: Core.Language.Translate("Delete"),
+                        Type: 'Warning',
+                        Function: function(){
+
+                            // disable buttons to prevent multiple submits
+                            $('div.Dialog:visible div.ContentFooter button').attr('disabled', 'disabled');
+
+                            // redirect to the module that does the confirmed action after pressing the Delete button
+                            location.href = Core.Config.Get('Baselink') + LocalDialogData.ConfirmedActionQueryString + SerializeData(Core.App.GetSessionInformation());
+                        }
+                    }
+                ];
+            }
+
             // show the confirmation dialog to confirm the action
             Core.UI.Dialog.ShowContentDialog(Response.HTML, LocalDialogData.DialogTitle, PositionTop, "Center", true, Buttons);
             $('a.AsPopupDialog').unbind('click.AsPopupDialog').bind('click.AsPopupDialog', function (Event) {
