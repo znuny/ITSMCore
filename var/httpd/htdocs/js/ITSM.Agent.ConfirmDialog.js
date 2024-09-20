@@ -92,23 +92,27 @@ ITSM.Agent.ConfirmDialog = (function (TargetNS) {
             if (Response.DialogType === 'Confirmation') {
 
                 // define yes and no buttons
-                Buttons = [{
-                    Label: LocalDialogData.TranslatedText.Yes,
-                    Class: "Primary",
+                Buttons = [
+                    {
+                        Label: LocalDialogData.TranslatedText.No,
+                        Class: "btn-cancel-ghost btn-main btn-width-md",
+                        Type: "Close"
+                    },
+                    {
+                        Label: LocalDialogData.TranslatedText.Yes,
+                        Class: "Primary btn-main btn-primary btn-width-md",
 
-                    // define the function that is called when the 'Yes' button is pressed
-                    Function: function(){
+                        // define the function that is called when the 'Yes' button is pressed
+                        Function: function(){
 
-                        // disable Yes and No buttons to prevent multiple submits
-                        $('div.Dialog:visible div.ContentFooter button').attr('disabled', 'disabled');
+                            // disable Yes and No buttons to prevent multiple submits
+                            $('div.Dialog:visible div.ContentFooter button').attr('disabled', 'disabled');
 
-                        // redirect to the module that does the confirmed action after pressing the Yes button
-                        location.href = Core.Config.Get('Baselink') + LocalDialogData.ConfirmedActionQueryString + SerializeData(Core.App.GetSessionInformation());
+                            // redirect to the module that does the confirmed action after pressing the Yes button
+                            location.href = Core.Config.Get('Baselink') + LocalDialogData.ConfirmedActionQueryString + SerializeData(Core.App.GetSessionInformation());
+                        }
                     }
-                }, {
-                    Label: LocalDialogData.TranslatedText.No,
-                    Type: "Close"
-                }];
+                ];
             }
 
             // 'Message' opens a dialog with 1 button: Ok
