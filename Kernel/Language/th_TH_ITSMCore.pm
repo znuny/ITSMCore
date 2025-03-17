@@ -180,6 +180,8 @@ sub Data {
 
 
     push @{ $Self->{JavaScriptStrings} //= [] }, (
+    'Cancel',
+    'Delete',
     );
 
 }
