@@ -2,13 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMCore\n"
 "POT-Creation-Date: 2020-01-24 12:24+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2025-07-22 09:14+0000\n"
+"Last-Translator: Spyros <spyros.veronikis@gmail.com>\n"
+"Language-Team: Greek <https://translations.znuny.org/projects/znuny-lts/"
+"itsmcore/el/>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Criticality ↔ Impact ↔ Priority"
@@ -17,30 +20,32 @@ msgstr ""
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Manage the priority result of combinating Criticality ↔ Impact."
 msgstr ""
+"Διαχείριση του αποτελέσματος προτεραιότητας της σχέσης "
+"Κρισιμότητας↔Αντικτύπου."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
 msgid "Priority allocation"
-msgstr ""
+msgstr "Κατανομή Προτεραιοτήτων"
 
 #. Template: AdminSLA
 msgid "Minimum Time Between Incidents"
-msgstr ""
+msgstr "Ελάχιστος Χρόνος μεταξύ Συμβάντων"
 
 #. Template: AdminService
 msgid "Criticality"
-msgstr ""
+msgstr "Κρισιμότητα"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "SLA Information"
-msgstr ""
+msgstr "Πληροφορίες Συμφωνίας Παροχής Υπηρεσίας (SLA)"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Last changed"
-msgstr ""
+msgstr "Τελευταία αλλαγή"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Last changed by"
-msgstr ""
+msgstr "Τελευταία αλλαγή από"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
 msgid "Associated Services"
@@ -60,7 +65,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AdminITSMCIPAllocate.pm
 msgid "Impact"
-msgstr ""
+msgstr "Αντίκτυπος"
 
 #. Perl Module: Kernel/Modules/AgentITSMSLAPrint.pm
 msgid "No SLAID is given!"
@@ -441,4 +446,3 @@ msgstr ""
 #. XML Definition: ITSMCore.sopm
 msgid "Training"
 msgstr ""
-
