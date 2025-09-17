@@ -18,13 +18,13 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
     $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = '';
     $Self->{Translation}->{'Manage the priority result of combinating Criticality ↔ Impact.'} =
-        '';
-    $Self->{Translation}->{'Priority allocation'} = '';
+        'Διαχείριση του αποτελέσματος προτεραιότητας της σχέσης Κρισιμότητας↔Αντικτύπου.';
+    $Self->{Translation}->{'Priority allocation'} = 'Κατανομή Προτεραιοτήτων';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt
-    $Self->{Translation}->{'SLA Information'} = '';
-    $Self->{Translation}->{'Last changed'} = '';
-    $Self->{Translation}->{'Last changed by'} = '';
+    $Self->{Translation}->{'SLA Information'} = 'Πληροφορίες Συμφωνίας Παροχής Υπηρεσίας (SLA)';
+    $Self->{Translation}->{'Last changed'} = 'Τελευταία αλλαγή';
+    $Self->{Translation}->{'Last changed by'} = 'Τελευταία αλλαγή από';
     $Self->{Translation}->{'Associated Services'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
@@ -178,7 +178,7 @@ sub Data {
     $Self->{Translation}->{'Width of ITSM textareas.'} = '';
 
 
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     );
 
 }
