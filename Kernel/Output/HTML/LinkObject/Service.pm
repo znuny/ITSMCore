@@ -312,7 +312,7 @@ sub TableCreateComplex {
         # User has no own settings.
         for my $Column ( sort keys %UserColumns ) {
             if ( !$SortOrder{$Column} ) {
-                $SortOrder{$Column} = 0;               # Set 0, it system will hide this item anyways
+                $SortOrder{$Column} = 0;    # Set 0, it system will hide this item anyways
             }
         }
     }
