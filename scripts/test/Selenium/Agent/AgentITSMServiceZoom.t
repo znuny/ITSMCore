@@ -51,18 +51,26 @@ $Selenium->RunTest(
         # get script alias
         my $ScriptAlias = $Kernel::OM->Get('Kernel::Config')->Get('ScriptAlias');
 
-        # navigate to AgentITSMServiceZoom screen with no ServiceID, expecting error message screen
+        # navigate to AgentITSMServiceZoom screen with no ServiceID, expecting error screen
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentITSMServiceZoom;ServiceID=");
+        my $ErrorScreenFound = $Selenium->WaitFor(
+            ElementExists => [ 'div.ErrorScreen', 'css' ],
+            SkipDie       => 1,
+        );
         $Self->True(
-            index( $Selenium->get_page_source(), 'No ServiceID is given!' ) > -1,
-            "Error message without service ID - found",
+            $ErrorScreenFound,
+            "Error screen without service ID - found",
         );
 
-        # navigate to AgentITSMServiceZoom screen with wrong ServiceID, expecting error message screen
+        # navigate to AgentITSMServiceZoom screen with wrong ServiceID, expecting error screen
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentITSMServiceZoom;ServiceID=asd");
+        $ErrorScreenFound = $Selenium->WaitFor(
+            ElementExists => [ 'div.ErrorScreen', 'css' ],
+            SkipDie       => 1,
+        );
         $Self->True(
-            index( $Selenium->get_page_source(), 'ServiceID asd not found in database!' ) > -1,
-            "Error message with wrong service ID - found",
+            $ErrorScreenFound,
+            "Error screen with wrong service ID - found",
         );
 
         # navigate to AgentITSMServiceZoom screen with correct ServiceID

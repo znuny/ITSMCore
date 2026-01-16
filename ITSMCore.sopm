@@ -2,8 +2,8 @@
 <otrs_package version="1.0">
     <Name>ITSMCore</Name>
     <Version>7.2.1</Version>
-    <Framework>7.2.x</Framework>
-    <PackageRequired Version="7.2.1">GeneralCatalog</PackageRequired>
+    <Framework>7.3.x</Framework>
+    <PackageRequired Version="7.3.1">GeneralCatalog</PackageRequired>
     <Vendor>Znuny</Vendor>
     <URL>https://www.znuny.org/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
@@ -455,7 +455,7 @@ Updated Translations.</ChangeLog>
         You are about to install the Znuny package ITSMCore.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroInstall>
@@ -468,7 +468,7 @@ Updated Translations.</ChangeLog>
         Sie sind im Begriff das Znuny-Paket ITSMCore zu installieren.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroInstall>
@@ -481,7 +481,7 @@ Updated Translations.</ChangeLog>
         Usted está apunto de instalar el modulo ITSMCore de Znuny.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroInstall>
@@ -494,7 +494,7 @@ Updated Translations.</ChangeLog>
         Ön az ITSMCore Znuny csomag telepítésére készül.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroInstall>
@@ -510,7 +510,7 @@ Updated Translations.</ChangeLog>
         The menu items that were added by this package will be visible after you log-in to the system again.
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroInstall>
@@ -526,7 +526,7 @@ Updated Translations.</ChangeLog>
         Die von diesem Paket hinzugefügten Menü-Punkte sind erst nach einem erneuten Anmeldevorgang im System sichtbar.
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroInstall>
@@ -541,7 +541,7 @@ Updated Translations.</ChangeLog>
         Los elementos del menu que fueron agregados por este packete serán visibles despues de que cierre y abra su sesion de nuevo.
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroInstall>
@@ -557,7 +557,7 @@ Updated Translations.</ChangeLog>
         Azok a menüpontok, amelyeket ez a csomag adott hozzá, azután lesznek láthatóak, miután ismét bejelentkezik a rendszerbe.
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroInstall>
@@ -571,7 +571,7 @@ Updated Translations.</ChangeLog>
         You are about to upgrade the Znuny package ITSMCore.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroUpgrade>
@@ -584,7 +584,7 @@ Updated Translations.</ChangeLog>
         Sie sind im Begriff das Znuny-Paket ITSMCore zu aktualisieren.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroUpgrade>
@@ -597,7 +597,7 @@ Updated Translations.</ChangeLog>
         Usted está apunto de instalar el modulo ITSMCore de Znuny.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroUpgrade>
@@ -610,7 +610,7 @@ Updated Translations.</ChangeLog>
         Ön az ITSMCore Znuny csomag frissítésére készül.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroUpgrade>
@@ -628,7 +628,7 @@ Updated Translations.</ChangeLog>
         You can activate this group again in the admin area.
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroUninstall>
@@ -646,7 +646,7 @@ Updated Translations.</ChangeLog>
         Sie kann jederzeit im Admin-Bereich wieder aktiviert werden.
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroUninstall>
@@ -664,7 +664,7 @@ Updated Translations.</ChangeLog>
         Usted puede activar este grupo de nuevo en el area de admin.
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroUninstall>
@@ -682,7 +682,7 @@ Updated Translations.</ChangeLog>
         Ezt a csoportot az adminisztrációs területen tudja ismét bekapcsolni.
         <br/>
         <br/>
-        ((enjoy))<br/>
+        <br/>
         <br/>
 
     ]]></IntroUninstall>

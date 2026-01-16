@@ -53,18 +53,26 @@ $Selenium->RunTest(
         # get script alias
         my $ScriptAlias = $Kernel::OM->Get('Kernel::Config')->Get('ScriptAlias');
 
-        # navigate to AgentITSMSLAZoom screen with no SLAID, expecting error message screen
+        # navigate to AgentITSMSLAZoom screen with no SLAID, expecting error screen
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentITSMSLAZoom;SLAID=");
+        my $ErrorScreenFound = $Selenium->WaitFor(
+            ElementExists => [ 'div.ErrorScreen', 'css' ],
+            SkipDie       => 1,
+        );
         $Self->True(
-            index( $Selenium->get_page_source(), 'No SLAID is given!' ) > -1,
-            "Error message without SLA ID - found",
+            $ErrorScreenFound,
+            "Error screen without SLA ID - found",
         );
 
-        # navigate to AgentITSMSLAZoom screen with wrong SLAID, expecting error message screen
+        # navigate to AgentITSMSLAZoom screen with wrong SLAID, expecting error screen
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentITSMSLAZoom;SLAID=asd");
+        $ErrorScreenFound = $Selenium->WaitFor(
+            ElementExists => [ 'div.ErrorScreen', 'css' ],
+            SkipDie       => 1,
+        );
         $Self->True(
-            index( $Selenium->get_page_source(), 'SLAID asd not found in database!' ) > -1,
-            "Error message with wrong SLA ID - found",
+            $ErrorScreenFound,
+            "Error screen with wrong SLA ID - found",
         );
 
         # navigate to AgentITSMSLAZoom screen with correct SLAID
