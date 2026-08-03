@@ -17,8 +17,8 @@ sub Data {
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMCIPAllocate.tt
     $Self->{Translation}->{'Manage the priority result of combinating Criticality ↔ Impact.'} =
-        '';
-    $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = '';
+        'Managementul priorității rezultate din relația Criticitate ↔ Impact';
+    $Self->{Translation}->{'Criticality ↔ Impact ↔ Priority'} = 'Criticitate ↔ Impact ↔ Prioritate';
     $Self->{Translation}->{'Priority allocation'} = 'Alocare prioritate';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMSLAZoom.tt

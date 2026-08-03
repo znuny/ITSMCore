@@ -28,7 +28,7 @@ sub Data {
     $Self->{Translation}->{'Associated Services'} = 'Hozzárendelt szolgáltatások';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMServiceZoom.tt
-    $Self->{Translation}->{'Service Information'} = 'Szolgáltatás információk';
+    $Self->{Translation}->{'Service Information'} = 'Szolgáltatásinformációk';
     $Self->{Translation}->{'Current incident state'} = 'Jelenlegi incidensállapot';
     $Self->{Translation}->{'Associated SLAs'} = 'Hozzárendelt SLA-k';
 
@@ -61,7 +61,7 @@ sub Data {
     $Self->{Translation}->{'IT Operational'} = 'IT üzemeltetés';
     $Self->{Translation}->{'Demonstration'} = 'Bemutató';
     $Self->{Translation}->{'Project'} = 'Projekt';
-    $Self->{Translation}->{'Training'} = '';
+    $Self->{Translation}->{'Training'} = 'Képzés';
     $Self->{Translation}->{'Underpinning Contract'} = 'Megalapozó szerződés';
     $Self->{Translation}->{'Other'} = 'Egyéb';
     $Self->{Translation}->{'Availability'} = 'Elérhetőség';
@@ -79,7 +79,7 @@ sub Data {
         'Műveletek meghatározása, ahol egy beállítások gomb érhető el a kapcsolt objektumok felületi elemen (LinkObject::ViewMode = „összetett”). Ne feledje, hogy ezeknek a műveleteknek rendelkezniük kell a következő JS és CSS fájlok regisztrálásával: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js és Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define which columns are shown in the linked Services widget (LinkObject::ViewMode = "complex"). Note: Only Service attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.'} =
         'Annak meghatározása, hogy mely oszlopok legyenek láthatók a kapcsolt szolgáltatások felületi elemen (LinkObject::ViewMode = „összetett”). Megjegyzés: csak szolgáltatás attribútumok engedélyezettek az alapértelmezett oszlopoknál. Lehetséges beállítások: 0 = letiltva, 1 = elérhető, 2 = alapértelmezetten engedélyezett.';
-    $Self->{Translation}->{'Depends on'} = 'Ettől függ';
+    $Self->{Translation}->{'Depends on'} = 'Függ ettől';
     $Self->{Translation}->{'Frontend module registration for the AdminITSMCIPAllocate configuration in the admin area.'} =
         'Előtétprogram modul regisztráció az adminisztrációs területen lévő kritikusság ↔ hatás ↔ prioritás lefoglalás beállításhoz.';
     $Self->{Translation}->{'Frontend module registration for the AgentITSMSLA object in the agent interface.'} =
@@ -96,7 +96,7 @@ sub Data {
         'Előtétprogram modul regisztráció az ügyintézői felületen lévő szolgáltatás nagyítás objektumhoz.';
     $Self->{Translation}->{'ITSM SLA Overview.'} = 'ITSM SLA áttekintés.';
     $Self->{Translation}->{'ITSM Service Overview.'} = 'ITSM szolgáltatás áttekintés.';
-    $Self->{Translation}->{'Incident State Type'} = 'Incidensállapot típus';
+    $Self->{Translation}->{'Incident State Type'} = 'Incidensállapot típusa';
     $Self->{Translation}->{'Includes'} = 'Tartalmazza';
     $Self->{Translation}->{'Manage priority matrix.'} = 'Prioritásmátrix kezelése.';
     $Self->{Translation}->{'Manage the criticality - impact - priority matrix.'} = 'A kritikusság ↔ hatás ↔ prioritás mátrix kezelése.';
