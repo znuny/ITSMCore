@@ -442,5 +442,5 @@ msgstr "Anzahl der Zeichen pro Zeile in ITSM-Textfeldern."
 
 #. XML Definition: ITSMCore.sopm
 msgid "Training"
-msgstr ""
+msgstr "Schulung"
 
