@@ -331,7 +331,7 @@ sub _PDFOutputDetailedInfos {
             Value => $LayoutObject->{LanguageObject}->Translate( $Param{SLA}->{CalendarName} ),
         },
         {
-            Key => $LayoutObject->{LanguageObject}->Translate('First Response Time') . ':',
+            Key   => $LayoutObject->{LanguageObject}->Translate('First Response Time') . ':',
             Value =>
                 $LayoutObject->{LanguageObject}->Translate( $Param{SLA}->{FirstResponseTime} )
                 . ' '

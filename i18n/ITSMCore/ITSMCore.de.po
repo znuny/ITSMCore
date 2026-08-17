@@ -322,7 +322,7 @@ msgstr "Setzen des Typs und der Richtung der verwendeten Links, um den Vorfallst
 
 #. SysConfig
 msgid "Source"
-msgstr ""
+msgstr "Quelle"
 
 #. SysConfig
 msgid "This setting defines that a 'ITSMChange' object can be linked with 'Ticket' objects using the 'Normal' link type."
@@ -442,5 +442,5 @@ msgstr "Anzahl der Zeichen pro Zeile in ITSM-Textfeldern."
 
 #. XML Definition: ITSMCore.sopm
 msgid "Training"
-msgstr ""
+msgstr "Schulung"
 
