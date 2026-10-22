@@ -29,16 +29,50 @@ did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 /**
  * @subsection  ITSM table body
  */
-/*#ITSMTableBody {
+#ITSMTableBody {
     position: relative;
     overflow: hidden;
     border-bottom: none;
-}*/
+    margin: 0px;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
 
 #ITSMTableBody .Scroller {
-    height: 140px;
+    /* temporary forced style to override inline styles */
+    /* height is dynamically changed inline with table size adjustments */
+    height: auto;
+    width: 100% !important;
     overflow-y: auto;
-    width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 0 !important;
+    border: none;
+    /* shrink instead of pushing the resize handle out of the clipped container */
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+#ITSMTableBody .Handle {
+    flex: 0 0 auto;
+}
+
+#ITSMTableBody .Scroller::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+    border-left: 1px solid #ccc;
+}
+
+#ITSMTableBody .Scroller::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+#ITSMTableBody .Scroller::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+}
+
+#ITSMTableBody .Scroller .DataTable {
+    border: 0px;
 }
 
 /**
